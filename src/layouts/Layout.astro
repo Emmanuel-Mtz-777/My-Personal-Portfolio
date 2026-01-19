@@ -1,0 +1,56 @@
+---
+import Particles from "../components/effects/Particles.jsx"
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Leviek | Emmanuel Martínez - Portfolio Fullstack</title>
+		<meta name="description" content="Portafolio de Leviek (Emmanuel Martínez), desarrollador Fullstack especializado en React, Vue, Node.js, Laravel y React Native. Stack completo para crear aplicaciones web, móviles y APIs escalables." />
+		<meta name="keywords" content="Leviek, Emmanuel Martínez, desarrollador fullstack, React, Vue, Node.js, Laravel, TypeScript, React Native, Docker, Portafolio, desarrollo web, aplicaciones móviles" />
+		<link rel="canonical" href="https://leviek.dev/" />
+		<meta name="robots" content="index, follow" />
+
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Leviek | Emmanuel Martínez - Portfolio Fullstack" />
+		<meta property="og:description" content="Portafolio de Leviek (Emmanuel Martínez), desarrollador Fullstack especializado en React, Vue, Node.js, Laravel y React Native." />
+		<meta property="og:url" content="https://leviek.dev/" />
+		<meta property="og:image" content="https://leviek.dev/img/og-image.png" />
+		
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Leviek | Emmanuel Martínez - Portfolio Fullstack" />
+		<meta name="twitter:description" content="Portafolio de Leviek (Emmanuel Martínez), desarrollador Fullstack especializado en React, Vue, Node.js, Laravel y React Native." />
+		<meta name="twitter:image" content="https://leviek.dev/img/og-image.png" />
+
+		<link rel="icon" type="image/x-icon" href="/Logo.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="stylesheet" href="/src/App.css" />	
+	</head>
+	<body>
+		<section class="w-full flex flex-col items-center">
+			<div class="min-h-[100dvh] w-screen fixed inset-0 -z-10 bg-linear-to-r from-gray-950 via-gray-800 to-gray-950">
+			<div class="absolute inset-0 -z-10 pointer-events-none">
+				<Particles client:load
+				particleColors={["#F97316", "#22C55E", "#C084FC"]}
+				particleCount={300}
+				particleSpread={10}
+				speed={0.3}
+				particleBaseSize={100}
+				moveParticlesOnHover={false}
+				/>
+      		</div>
+		</section>
+		<slot />
+	</body>
+</html>
+
+<style>
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+</style>

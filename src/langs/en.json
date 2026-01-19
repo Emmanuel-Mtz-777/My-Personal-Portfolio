@@ -1,0 +1,148 @@
+{
+  "hero": {
+    "role": "Fullstack Developer",
+    "greeting": "Hi! I'm Emmanuel Martínez",
+    "imageAlt": "AI image of my previous style with blond hair",
+    "description": "Focused on creating functional and well-structured solutions.",
+    "completeDescription":"I enjoy transforming ideas into real projects using modern tools and continuously growing professionally.",
+    "location": "Aguascalientes, Ags., Mexico 🇲🇽"
+  },
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "stack": "Stack",
+    "certifications": "Certifications",
+    "about": "About Me",
+    "contact": "Contact",
+    "experience": "Experience"
+  },
+  "projects": {
+    "title": "Projects",
+    "items": [
+      {
+        "id": "spotify-insights",
+        "imageAlt": "Screenshot of Spotify-Insights-with-Elasticsearch",
+        "name": "Spotify-Insights-with-Elasticsearch",
+        "description": "Big Data analysis using Elasticsearch on a Spotify songs dataset. It allows querying features such as duration, energy, and valence, and visualizing results in Jupyter Notebooks. The entire environment (Elasticsearch and Kibana) runs in Docker containers.",
+        "technologies": [
+          "Python",
+          "Jupyter Notebook",
+          "Elasticsearch",
+          "Docker"
+        ],
+        "repository": "View repository",
+        "githubLink": "https://github.com/Emmanuel-Mtz-777/Spotify-Insights-with-Elasticsearch"
+      },
+      {
+        "id": "snakify",
+        "imageAlt": "Screenshot of Snakify",
+        "name": "Snakify",
+        "description": "Frontend project developed for an e-commerce platform focused on selling desserts in local stores. It allows user interaction with the interface, leaving room for future backend integration.",
+        "technologies": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "TypeScript",
+          "Tailwind CSS",
+          "Astro"
+        ],
+        "repository": "View repository",
+        "githubLink": "https://github.com/Emmanuel-Mtz-777/Snackify"
+      },
+      {
+        "id": "c-ita",
+        "imageAlt": "Screenshot of C-Ita",
+        "name": "C-Ita",
+        "description": "Frontend project developed in Kotlin, focused on creating a Facebook-style social network for ITA students. It enables user interaction through posts, using both a local SQLite database and an external Node.js API connected to a MySQL database.",
+        "technologies": [
+          "Kotlin"
+        ],
+        "repository": "View repository",
+        "githubLink": "https://github.com/Emmanuel-Mtz-777/Cita"
+      },
+      {
+        "id": "meet2go",
+        "imageAlt": "Screenshot of Meet2go",
+        "name": "Meet2go",
+        "description": "Cross-platform mobile application developed with React Native and Supabase to connect people with similar interests and organize group events. It includes user profiles, event management, and a real-time chat system based on an Express microservice deployed on Heroku.",
+        "technologies": [
+          "React",
+          "React Native",
+          "Supabase",
+          "Express"
+        ],
+        "repository": "View repository",
+        "githubLink": "https://github.com/Emmanuel-Mtz-777/meet2Go"
+      }
+    ]
+  },
+  "stack": {
+    "title": "Tech Stack",
+    "description": "My tech stack focuses on frontend and backend development, as well as data management, allowing me to build complete and well-structured applications.",
+    "completeDescription": "This technical foundation gives me the flexibility to adapt to different needs, integrate multiple technologies, and deliver functional and scalable solutions."
+  },
+   "certifications": {
+    "title": "My Certifications",
+    "items": [
+      {
+        "date": "2021 - Present",
+        "name": "Bachelor's in Information and Communications Technologies Engineering",
+        "organization": "Instituto Tecnológico de Aguascalientes",
+        "description": "Student in training with a focus on software development, networking, databases, artificial intelligence, and cybersecurity. Participated in academic projects, tech competitions, and hands-on practices with modern tools in the technology ecosystem.",
+        "details": "View Details"
+      },
+      {
+        "date": "2024-12-13",
+        "name": "CCNA: Enterprise Networking, Security, and Automation",
+        "organization": "Cisco",
+        "description": "Completed course on scalable network architectures, dynamic routing, security threat mitigation, wide area networks (WAN), virtualization, and programmable network automation.",
+        "details": "View Details"
+      },
+      {
+        "date": "2024-12-02",
+        "name": "Linux Unhatched",
+        "organization": "Cisco (in collaboration with NDG)",
+        "description": "Certification in basic Linux terminal usage, navigating system directories, creating, deleting, and moving files, writing simple scripts, and managing file permissions and ownership.",
+        "details": "View Details"
+      },
+      {
+        "date": "2023-12-07",
+        "name": "CCNA: Switching, Routing, and Wireless Fundamentals",
+        "organization": "Cisco",
+        "description": "Comprehensive course on switching operations, configuring wired and wireless LANs using best security practices, redundancy protocols, and developing problem-solving skills.",
+        "details": "View Details"
+      },
+      {
+        "date": "2023-10-29",
+        "name": "Introduction to Data Science",
+        "organization": "Cisco",
+        "description": "Completed course on basic data science concepts. Gained general understanding of data analytics, data engineering, data science, and job roles related to AI and machine learning, along with a broad overview of professional opportunities in these areas.",
+        "details": "View Details"
+      },
+      {
+        "date": "2023-05-30",
+        "name": "CCNA: Introduction to Networks",
+        "organization": "Cisco",
+        "description": "Completed course on network fundamentals. Acquired knowledge in IP addressing, Ethernet functionality, switching, subnetting, and configuring connectivity between switches, routers, and end devices.",
+        "details": "View Details"
+      }
+    ]
+  },
+  "about": {
+    "title": "About Me",
+    "identity": {
+      "text": "I am Emmanuel Martínez, a student of Information and Communication Technologies Engineering. Passionate about turning ideas into real solutions.",
+      "highlight": ["Emmanuel Martínez", "Information and Communication Technologies Engineering", "turning ideas into real solutions"]
+    },
+    "focus": {
+      "text": "I explore how systems work. I aim to make good technical decisions and continuously improve.",
+      "highlight": ["how systems work", "good technical decisions", "continuously improve"]
+    },
+    "values": {
+      "text": "Curious and persevering. I believe in continuous improvement, learning from mistakes, and the value of well-done work and collaboration.",
+      "highlight": ["Curious and persevering", "continuous improvement", "learning from mistakes", "well-done work and collaboration"]
+    }
+  }
+
+
+}

@@ -1,0 +1,146 @@
+{
+  "hero": {
+    "role": "Desarrollador Fullstack",
+    "greeting": "¡Hola! Soy Emmanuel Martínez",
+    "imageAlt": "Imagen IA de mi estilo anterior con cabello rubio",
+    "description": "Enfocado en crear soluciones funcionales y bien estructuradas.",
+    "completeDescription":"Me gusta transformar ideas en proyectos reales utilizando herramientas modernas y manteniéndome en constante crecimiento profesional.",
+    "location": "Aguascalientes, Ags., México 🇲🇽"
+  },
+  "nav": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "stack": "Stack",
+    "certifications": "Certificaciones",
+    "about": "Sobre mí",
+    "contact": "Contacto",
+    "experience": "Experiencia"
+  },
+    "projects": {
+    "title": "Proyectos",
+    "items": [
+      {
+        "id": "spotify-insights",
+        "imageAlt": "Captura de pantalla de Spotify-Insights-with-Elasticsearch",
+        "name": "Spotify-Insights-with-Elasticsearch",
+        "description": "Análisis de Big Data con Elasticsearch sobre un dataset de canciones de Spotify. Permite consultar características como duración, energía y valencia, y visualizar los resultados en Jupyter Notebooks. Todo el entorno (Elasticsearch y Kibana) corre en contenedores Docker.",
+        "technologies": [
+          "Python",
+          "Jupyter Notebook",
+          "Elasticsearch",
+          "Docker"
+        ],
+        "repository": "Ver repositorio",
+        "githubLink": "https://github.com/Emmanuel-Mtz-777/Spotify-Insights-with-Elasticsearch"
+      },
+      {
+        "id": "snakify",
+        "imageAlt": "Captura de pantalla de Snakify",
+        "name": "Snakify",
+        "description": "Proyecto frontend desarrollado para un E-commerce enfocado en la venta de postres en tiendas locales. Permite la interacción del usuario con la interfaz, dejando abierta la posibilidad de integrar un backend en el futuro.",
+        "technologies": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "TypeScript",
+          "Tailwind CSS",
+          "Astro"
+        ],
+        "repository": "Ver repositorio",
+        "githubLink": "https://github.com/Emmanuel-Mtz-777/Snackify"
+      },
+      {
+        "id": "c-ita",
+        "imageAlt": "Captura de pantalla de C-Ita",
+        "name": "C-Ita",
+        "description": "Proyecto frontend desarrollado en Kotlin, enfocado en crear una red social al estilo Facebook para estudiantes del ITA. Permite la interacción entre usuarios mediante publicaciones, utilizando tanto una base de datos local SQLite como una API externa desarrollada en Node.js con conexión a una base de datos MySQL.",
+        "technologies": [
+          "Kotlin"
+        ],
+        "repository": "Ver repositorio",
+        "githubLink": "https://github.com/Emmanuel-Mtz-777/Cita"
+      },
+      {
+        "id": "meet2go",
+        "imageAlt": "Captura de pantalla de Meet2go",
+        "name": "Meet2go",
+        "description": "Aplicación móvil multiplataforma desarrollada con React Native y Supabase para conectar personas con intereses similares y organizar eventos grupales. Incluye perfiles de usuario, gestión de eventos y un sistema de chat en tiempo real basado en un microservicio con Express desplegado en Heroku.",
+        "technologies": [
+          "React",
+          "React Native",
+          "Supabase",
+          "Express"
+        ],
+        "repository": "Ver repositorio",
+        "githubLink": "https://github.com/Emmanuel-Mtz-777/meet2Go"
+      }
+    ]
+  },
+    "stack": {
+      "title": "Stack Tecnológico",
+      "description": "Mi stack tecnológico se enfoca en el desarrollo frontend, backend y el manejo de datos, permitiéndome construir aplicaciones completas y bien estructuradas.",
+      "completeDescription": "Esta base técnica me da la flexibilidad de adaptarme a diferentes necesidades, integrar múltiples tecnologías y entregar soluciones funcionales y escalables."
+  },
+  "certifications": {
+    "title": "Mis Certificaciones",
+    "items": [
+      {
+        "date": "2021 - Actualidad",
+        "name": "Ingeniería en Tecnologías de la Información y las Comunicaciones",
+        "organization": "Instituto Tecnológico de Aguascalientes",
+        "description": "Estudiante en formación con enfoque en desarrollo de software, redes, bases de datos, inteligencia artificial y ciberseguridad. Participación en proyectos académicos, concursos tecnológicos y prácticas con herramientas modernas del ecosistema tecnológico.",
+        "details": "Ver detalles"
+      },
+      {
+        "date": "2024-12-13",
+        "name": "CCNA: Redes Empresariales, Seguridad y Automatización",
+        "organization": "Cisco",
+        "description": "Curso completado sobre arquitecturas de red escalables, enrutamiento dinámico, mitigación de amenazas de seguridad, redes de área amplia (WAN), virtualización y automatización de redes programables.",
+        "details": "Ver detalles"
+      },
+      {
+        "date": "2024-12-02",
+        "name": "Linux Unhatched",
+        "organization": "Cisco (en colaboración con NDG)",
+        "description": "Certificación de conocimientos básicos sobre el uso de la terminal de Linux, navegación entre directorios del sistema, creación, eliminación y movimiento de archivos, escritura de scripts simples, y gestión de permisos y propiedad de archivos.",
+        "details": "Ver detalles"
+      },
+      {
+        "date": "2023-12-07",
+        "name": "CCNA: Conmutación, Enrutamiento y Fundamentos Inalámbricos",
+        "organization": "Cisco",
+        "description": "Curso completo sobre operaciones de conmutación, configuración de redes LAN cableadas e inalámbricas utilizando prácticas recomendadas de seguridad, protocolos de redundancia y desarrollo de habilidades para la resolución de problemas.",
+        "details": "Ver detalles"
+      },
+      {
+        "date": "2023-10-29",
+        "name": "Introducción a la Ciencia de Datos",
+        "organization": "Cisco",
+        "description": "Curso completado sobre los conceptos básicos de la ciencia de datos. El titular adquirió una comprensión general sobre analítica de datos, ingeniería de datos, ciencia de datos y funciones laborales relacionadas con IA y aprendizaje automático, así como una visión general de oportunidades profesionales en estas áreas.",
+        "details": "Ver detalles"
+      },
+      {
+        "date": "2023-05-30",
+        "name": "CCNA: Introducción a Redes",
+        "organization": "Cisco",
+        "description": "Curso completado sobre fundamentos de redes. Se adquirió conocimiento en direccionamiento IP, funcionamiento de Ethernet, conmutación, subneteo y configuración de conectividad entre switches, routers y dispositivos finales.",
+        "details": "Ver detalles"
+      }
+    ]
+  },
+  "about": {
+    "title": "Sobre mí",
+    "identity": {
+      "text": "Soy Emmanuel Martínez, estudiante de Ingeniería en TIC. Apasionado por transformar ideas en soluciones reales.",
+      "highlight": ["Emmanuel Martínez", "Ingeniería en TIC", "transformar ideas en soluciones"]
+    },
+    "focus": {
+      "text": "Exploro cómo funcionan los sistemas. Busco tomar buenas decisiones técnicas y mejorar continuamente.",
+      "highlight": ["cómo funcionan los sistemas", "buenas decisiones técnicas", "mejorar continuamente"]
+    },
+    "values": {
+      "text": "Curioso y perseverante. Creo en la mejora continua, aprender de errores, y el valor del trabajo bien hecho.",
+      "highlight": ["Curioso y perseverante", "mejora continua", "aprender de errores", "trabajo bien hecho"]
+    }
+  }
+}

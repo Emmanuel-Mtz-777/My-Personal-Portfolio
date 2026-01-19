@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+#root {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-link {
+  @apply
+    flex items-center justify-center gap-2
+    px-5 py-3 rounded-2xl
+    border border-white
+    text-white
+    transition duration-300
+    hover:bg-white hover:text-black hover:scale-105;
+}
+
