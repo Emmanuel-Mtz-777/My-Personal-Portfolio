@@ -69,18 +69,18 @@ export default function Hero() {
                     <div className="flex flex-row gap-6 justify-center ">
                         <AnimatedContent>
                             <div className="flex w-full gap-4 sm:gap-6 justify-center">
-                                <a href="https://github.com/Emmanuel-Mtz-777" target="_blank" rel="noopener noreferrer" className="flex p-2 border border-white rounded-xl items-center gap-2 hover:bg-white/20 transition-colors duration-200">
+                                <a href="https://github.com/Emmanuel-Mtz-777" target="_blank" rel="noopener noreferrer" className="flex p-2 border border-white rounded-xl px-4 items-center gap-2 hover:bg-white/20 transition-colors duration-200">
                                 <GitHub className="w-5 h-5" />
                                 <span className="hidden sm:inline">GitHub</span>
                                 </a>
 
-                                <a href="https://www.linkedin.com/in/humberto-emmanuel-rosales-martinez-588002316/" target="_blank" rel="noopener noreferrer" className="flex p-2 border border-white rounded-xl items-center gap-2 hover:bg-white/20 transition-colors duration-200">
+                                <a href="https://www.linkedin.com/in/humberto-emmanuel-rosales-martinez-588002316/" target="_blank" rel="noopener noreferrer" className="flex px-4 border border-white rounded-xl items-center gap-2 hover:bg-white/20 transition-colors duration-200">
                                     <Linkedin className="w-5 h-5" />
                                     <span className="hidden sm:inline">LinkedIn</span>
                                 </a>
                                 <a 
                                     href="mailto:hemmanuelmtz777@gmail.com"
-                                    className="flex p-2 border border-white rounded-xl items-center gap-2 min-w-0 hover:bg-white/20 transition-colors duration-200"
+                                    className="flex px-4 border border-white rounded-xl items-center gap-2 min-w-0 hover:bg-white/20 transition-colors duration-200"
                                     >
                                     <Mail className="w-5 h-5 flex-shrink-0" />
                                     <span className="text-sm truncate">hemmanuelmtz777@gmail.com</span>

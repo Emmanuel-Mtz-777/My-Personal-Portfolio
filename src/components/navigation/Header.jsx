@@ -18,8 +18,8 @@ export default function Header() {
 
   const navItems = [
     { id: "home", label: t("nav.home"), icon: <HiHome /> },
+    { id: "experience", label: t("nav.experience"), icon: <HiBriefcase /> },
     { id: "projects", label: t("nav.projects"), icon: <HiFolder /> },
-    //{ id: "experience", label: t("nav.experience"), icon: <HiBriefcase /> },
     { id: "certifications", label: t("nav.certifications"), icon: <HiAcademicCap /> },
     { id: "about", label: t("nav.about"), icon: <HiUser /> },
   ];
@@ -37,7 +37,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full z-40 backdrop-blur-md">
+      <header className="fixed top-0 left-0 w-full z-40 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between h-20 items-center">
           <img src="/img/Logo.webp" alt="Logo"  className="object-contain h-20"/>
 

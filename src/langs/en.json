@@ -1,6 +1,6 @@
 {
   "hero": {
-    "role": "Fullstack Developer",
+    "role": "Fullstack Web Developer",
     "greeting": "Hi! I'm Emmanuel Martínez",
     "imageAlt": "AI image of my previous style with blond hair",
     "description": "Focused on creating functional and well-structured solutions.",
@@ -16,6 +16,35 @@
     "contact": "Contact",
     "experience": "Experience"
   },
+  "experience": {
+  "title": "Work Experience",
+  "time": "September 2025 - Present",
+  "items": [
+    {
+      "position": "Mobile Frontend Developer",
+      "company": "Swopyn Business Software Solutions",
+      "duration": "September 2025 - Present",
+      "description": [
+        "Developed mobile user interfaces using React Native.",
+        "Consumed APIs and handled requests and service integrations.",
+        "Implemented custom hooks to optimize component logic and code reusability.",
+        "Contributed to the development of an administrative portal mobile application based on an existing system."
+      ]
+    },
+    {
+      "position": "Community Service – ICT and Technical Support",
+      "company": "Instituto Tecnológico de Aguascalientes",
+      "duration": "October 2024 - June 2025",
+      "description": [
+        "Supported academic projects related to Information and Communication Technologies (ICT) and testing environments.",
+        "Developed and maintained a smart home assistant system designed for people with hearing disabilities.",
+        "Designed, cabled, and configured network infrastructure, including internet distribution from racks to computer equipment.",
+        "Installed, configured, and maintained IP and analog security cameras, including DVR troubleshooting and repairs.",
+        "Configured academic testing environments and provided technical support for software and hardware."
+      ]
+    }
+  ]},
+
   "projects": {
     "title": "Projects",
     "items": [
