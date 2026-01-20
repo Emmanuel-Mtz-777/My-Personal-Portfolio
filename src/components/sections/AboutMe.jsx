@@ -75,7 +75,7 @@ export default function AboutMe() {
             transitionDuration={800}
             playOnce={false}
           >
-            <img src="/img/Yo.avif" alt="Yo" className="w-80 h-auto sm:w-100" />
+            <img src="/img/Yo.avif" alt="Yo" className="w-80 h-auto sm:w-100" loading="lazy"/>
           </GlareHover>
 
       </div>

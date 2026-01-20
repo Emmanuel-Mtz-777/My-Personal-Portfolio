@@ -25,6 +25,7 @@ export default function ProjectCard({ project }) {
           <img
             src={image}
             alt={`Captura de pantalla de ${title}`}
+            loading="lazy"
             className="
               w-full max-w-[300px] h-[180px]
               md:w-[300px] md:h-[300px]

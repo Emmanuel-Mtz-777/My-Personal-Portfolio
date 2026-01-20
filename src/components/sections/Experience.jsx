@@ -85,9 +85,6 @@ export default function Experience() {
               }`}
           >
             <h3 className="text-xl sm:text-2xl font-semibold text-white">
-              {exp.role}
-            </h3>
-            <h3 className="text-xl sm:text-2xl font-semibold text-white">
             {exp.position}
             </h3>
 
