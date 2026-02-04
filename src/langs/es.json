@@ -22,7 +22,7 @@
     {
       "position": "Desarrollador Móvil Frontend",
       "company": "Swopyn Business Software Solutions",
-      "duration": "Septiembre 2025 - Actualidad",
+      "duration": "Septiembre 2025 - Febrero 2026",
       "description": [
         "Desarrollo de interfaces móviles utilizando React Native.",
         "Consumo de APIs y manejo de peticiones y servicios.",
@@ -158,8 +158,8 @@
   "about": {
     "title": "Sobre mí",
     "identity": {
-      "text": "Soy Emmanuel Martínez, estudiante de Ingeniería en TIC. Apasionado por transformar ideas en soluciones reales.",
-      "highlight": ["Emmanuel Martínez", "Ingeniería en TIC", "transformar ideas en soluciones"]
+      "text": "Soy Emmanuel Martínez, Ingeniero en TIC. Apasionado por transformar ideas en soluciones reales.",
+      "highlight": ["Emmanuel Martínez", "Ingeniero en TIC", "transformar ideas en soluciones"]
     },
     "focus": {
       "text": "Exploro cómo funcionan los sistemas. Busco tomar buenas decisiones técnicas y mejorar continuamente.",

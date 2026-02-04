@@ -18,12 +18,11 @@
   },
   "experience": {
   "title": "Work Experience",
-  "time": "September 2025 - Present",
   "items": [
     {
       "position": "Mobile Frontend Developer",
       "company": "Swopyn Business Software Solutions",
-      "duration": "September 2025 - Present",
+      "duration": "September 2025 - February 2026",
       "description": [
         "Developed mobile user interfaces using React Native.",
         "Consumed APIs and handled requests and service integrations.",
@@ -160,8 +159,8 @@
   "about": {
     "title": "About Me",
     "identity": {
-      "text": "I am Emmanuel Martínez, a student of Information and Communication Technologies Engineering. Passionate about turning ideas into real solutions.",
-      "highlight": ["Emmanuel Martínez", "Information and Communication Technologies Engineering", "turning ideas into real solutions"]
+      "text": "I am Emmanuel Martínez, an Information and Communication Technologies Engineer. Passionate about turning ideas into real solutions.",
+      "highlight": ["Emmanuel Martínez", "Information and Communication Technologies Engineer", "turning ideas into real solutions"]
     },
     "focus": {
       "text": "I explore how systems work. I aim to make good technical decisions and continuously improve.",
