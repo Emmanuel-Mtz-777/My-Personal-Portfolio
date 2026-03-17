@@ -15,7 +15,7 @@ import Tailwind from "../icons/tec/Tailwind";
 import ReactNative from "../icons/tec/ReactNative"; 
 import Typescript from "../icons/tec/Typescript";
 import Vue from "../icons/tec/Vue";
-import { SiFigma, SiSupabase } from "react-icons/si";
+import { SiFigma, SiSupabase, SiPython } from "react-icons/si";
 
 const ICON_SIZE="size-10"
 
@@ -36,7 +36,8 @@ const backendLogos = [
     { node: <Express className={ICON_SIZE}/>, title: "Express" },
     { node: <Laravel className={ICON_SIZE}/>, title: "Laravel" },
     { node: <Mysql className={ICON_SIZE}/>, title: "MySQL" },
-    { node: <SiSupabase className={ICON_SIZE} color='#34B27B'/>, title: "Supabase" }
+    { node: <SiSupabase className={ICON_SIZE} color='#34B27B'/>, title: "Supabase" },
+    { node: <SiPython className={ICON_SIZE} color='#3776AB' />, title: "Python" },
 ];
 
 const toolsLogos = [
@@ -48,7 +49,7 @@ const toolsLogos = [
 
 export default function Stack(){
     const {t} = useTranslation();
-    
+
     return(
         <section id="stack" className="relative w-full flex flex-col items-center pt-20">
             <h2 className="text-2xl sm:text-4xl font-bold text-white mb-12 text-start" >{t("stack.title")}</h2>
