@@ -48,6 +48,7 @@ const toolsLogos = [
 
 export default function Stack(){
     const {t} = useTranslation();
+    
     return(
         <section id="stack" className="relative w-full flex flex-col items-center pt-20">
             <h2 className="text-2xl sm:text-4xl font-bold text-white mb-12 text-start" >{t("stack.title")}</h2>
