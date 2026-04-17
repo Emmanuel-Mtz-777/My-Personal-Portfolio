@@ -2,6 +2,7 @@ import "../../config/i18n";
 import GlareHover from "../effects/GlareHover";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
+import {trackEvent} from "../../utils/analiticsTrackEvent.js";
 
 export default function AboutMe() {
   const { t } = useTranslation();
@@ -32,8 +33,16 @@ export default function AboutMe() {
       );
     });
 
+
     return <span dangerouslySetInnerHTML={{ __html: highlightedText }} />;
+
+    
   };
+  const getCVFile = () => {
+      return i18n.language === "es"
+        ? "/docs/Emmanuel_Martinez_Fullstack_Developer_cv.pdf"
+        : "/docs/Emmanuel_Martinez_Fullstack_Developer_en_cv.pdf";
+    };
 
   return (
     <section
@@ -58,8 +67,14 @@ export default function AboutMe() {
           </p>
 
           <a
-            href="/docs/Emmanuel_Mtz_CV.pdf"
+            href={getCVFile()}
             download
+            onClick={() =>
+              trackEvent("download_cv", {
+                file_name: getCVFile().split("/").pop(),
+                location: "about_section"
+              })
+            }
             className="text-white inline-block mt-4 bg-black/30 px-6 py-2 border border-white rounded-lg hover:bg-white/20 transition-colors duration-200"
           >
             Descargar CV

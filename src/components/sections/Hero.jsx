@@ -6,6 +6,7 @@ import AnimatedContent from "../effects/AnimatedContent";
 import Mail from "../icons/Mail";
 import Linkedin from "../icons/Linkedin";
 import GitHub from "../icons/Github";
+import {trackEvent} from "../../utils/analiticsTrackEvent.js";
 
 export default function Hero() {
     const { t, i18n } = useTranslation();
@@ -15,6 +16,11 @@ export default function Hero() {
         setHydrated(true);
     }, []);
 
+    const getCVFile = () => {
+      return i18n.language === "es"
+        ? "/docs/Emmanuel_Martinez_Fullstack_Developer_cv.pdf"
+        : "/docs/Emmanuel_Martinez_Fullstack_Developer_en_cv.pdf";
+    };
 
     return (
         <section id="home" className="relative min-h-[100dvh] w-full flex items-center justify-center px-4 pt-20 sm:px-6 overflow-hidden">
@@ -93,8 +99,14 @@ export default function Hero() {
                     </div>
                     <AnimatedContent  active={hydrated}>
                          <a
-                            href="../../docs/Emmanuel_Mtz_CV.pdf"
+                            href={getCVFile()}
                             download
+                            onClick={() =>
+                                trackEvent("download_cv", {
+                                    file_name: getCVFile().split("/").pop(),
+                                    location: "about_section"
+                                })
+                                }
                             className="text-white inline-block mt-4 px-6 py-3 border border-white rounded-xl
                            hover:bg-white/20 transition-colors duration-200"
                             >

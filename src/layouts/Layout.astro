@@ -1,6 +1,7 @@
 ---
 import Particles from "../components/effects/Particles.jsx"
 import '../App.css';
+import Analitics from "../components/analitycs/Analitics.astro";
 ---
 
 <!doctype html>
@@ -29,6 +30,7 @@ import '../App.css';
 		<meta name="generator" content={Astro.generator} />
 	</head>
 	<body>
+		<Analitics />
 		<section class="w-full flex flex-col items-center">
 			<div class="min-h-[100dvh] w-screen fixed inset-0 -z-10 bg-linear-to-r from-gray-950 via-gray-800 to-gray-950">
 			<div class="absolute inset-0 -z-10 pointer-events-none">
