@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import {trackEvent} from "../../utils/analiticsTrackEvent.js";
 
 export default function AboutMe() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const [hydrated, setHydrated] = useState(false);
   useEffect(() => {
