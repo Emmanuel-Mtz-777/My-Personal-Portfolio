@@ -1,122 +1,98 @@
 import "../../config/i18n";
-import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import SplitText from "../effects/SplitText";
-import AnimatedContent from "../effects/AnimatedContent";
 import Mail from "../icons/Mail";
 import Linkedin from "../icons/Linkedin";
 import GitHub from "../icons/Github";
-import {trackEvent} from "../../utils/analiticsTrackEvent.js";
+import { trackEvent } from "../../utils/analiticsTrackEvent.js";
+import "../../styles/Hero.css";
 
 export default function Hero() {
-    const { t, i18n } = useTranslation();
-    const [key, setKey] = useState(0);
-    const [hydrated, setHydrated] = useState(false);
-    useEffect(() => {
-        setHydrated(true);
-    }, []);
+  const { t, i18n } = useTranslation();
 
-    const getCVFile = () => {
-      return i18n.language === "es"
-        ? "/docs/Emmanuel_Martinez_Fullstack_Developer_cv.pdf"
-        : "/docs/Emmanuel_Martinez_Fullstack_Developer_en_cv.pdf";
-    };
+  const getCVFile = () => {
+    return i18n.language === "es"
+      ? "/docs/Emmanuel_Martinez_Fullstack_Developer_cv.pdf"
+      : "/docs/Emmanuel_Martinez_Fullstack_Developer_en_cv.pdf";
+  };
 
-    return (
-        <section id="home" className="relative min-h-[100dvh] w-full flex items-center justify-center px-4 pt-20 sm:px-6 overflow-hidden">
-        <div className="flex flex-col items-center text-center gap-6 max-w-3xl w-full ">
+  return (
+    <section
+      id="home"
+      className="relative min-h-dvh w-full flex items-center justify-center px-4 pt-20 sm:px-6 overflow-hidden "
+    >
+      <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-12 w-full max-w-6xl">
+        <div className="flex flex-col text-left items-start gap-6 text-white max-w-2xl">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-stone-400 lg:whitespace-nowrap">
+            {t("hero.greeting")}
+          </h1>
 
-            <SplitText
-            key={`greeting-${key}`}
-            text={t("hero.greeting")}
-            className="text-2xl sm:text-3xl md:text-5xl font-semibold text-stone-400"
-            delay={60}
-            duration={0.4}
-            splitType="chars"
-            from={hydrated ? { opacity: 0, y: 40 } : { opacity: 1, y: 0 }}
-            to={{ opacity: 1, y: 0 }}
-            tag="h1"
-            />
+          <h2 className="text-2xl sm:text-4xl font-semibold text-white">
+            {t("hero.role")}
+          </h2>
 
-            <div className="h-10 sm:h-12">
-        
-                <SplitText
-                key={`role-${key}`}
-                text={t("hero.role")}
-                className="text-2xl sm:text-4xl  font-semibold text-white"
-                delay={50}
-                duration={0.2}
-                splitType="chars"
-                from={hydrated ? { opacity: 0, y: 40 } : { opacity: 1, y: 0 }}
-                to={{ opacity: 1, y: 0 }}
-                tag="h2"
-                />
-            </div>
-            <div
-                className={
-                    "text-white space-y-3 max-w-2xl transition-all duration-700 ease-out text-start opacity-100 translate-y-0"
-                }
+          <div className="text-base sm:text-lg space-y-4">
+            <p>{t("hero.description")}</p>
+
+            <p className="text-sm opacity-80">{t("hero.location")}</p>
+          </div>
+          <div className="flex flex-wrap justify-center lg:justify-start gap-4">
+            <a
+              href="https://github.com/Emmanuel-Mtz-777"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex p-2 border border-white rounded-xl px-4 items-center gap-2 hover:bg-white/20 hover:scale-110 transition-all duration-400"
             >
-                <AnimatedContent active={hydrated}>
-                    <p className="text-base sm:text-lg">
-                    {t("hero.description")}
-                    </p>
+              <GitHub className="w-5 h-5" />
+              <span>GitHub</span>
+            </a>
 
-                    <p className="text-base sm:text-lg">
-                        {t("hero.completeDescription")}
-                    </p>
+            <a
+              href="https://www.linkedin.com/in/humberto-emmanuel-rosales-martinez-588002316/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex px-4 border border-white rounded-xl items-center gap-2 hover:bg-white/20 hover:scale-110 transition-all duration-400"
+            >
+              <Linkedin className="w-5 h-5" />
+              <span>LinkedIn</span>
+            </a>
 
-                    <p className="text-sm opacity-80 mt-4">
-                        {t("hero.location")}
-                    </p>
-                </AnimatedContent >
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-6 w-full">
+            <a
+              href="mailto:hemmanuelmtz777@gmail.com"
+              className="flex px-4 border border-white rounded-xl items-center gap-2 hover:bg-white/20 hover:scale-110 transition-all duration-400"
+            >
+              <Mail className="w-5 h-5" />
+              <span>Gmail</span>
+            </a>
+          </div>
 
-                    <div className="flex flex-row gap-6 justify-center ">
-                        <AnimatedContent>
-                            <div className="flex w-full gap-4 sm:gap-6 justify-center">
-                                <a href="https://github.com/Emmanuel-Mtz-777" target="_blank" rel="noopener noreferrer" className="flex p-2 border border-white rounded-xl px-4 items-center gap-2 hover:bg-white/20 transition-colors duration-200">
-                                <GitHub className="w-5 h-5" />
-                                <span className="hidden sm:inline">GitHub</span>
-                                </a>
+          <div className="flex pt-2 md:flex-wrap md:gap-6 justify-evenly md:justify-start w-full font-semibold">
+            <a
+              href={getCVFile()}
+              download
+              className="bg-white text-black px-6 py-3 rounded-xl transition-all duration-400 hover:bg-gray-800 hover:text-white hover:border hover:border-white hover:scale-110"
+            >
+              Descargar CV
+            </a>
 
-                                <a href="https://www.linkedin.com/in/humberto-emmanuel-rosales-martinez-588002316/" target="_blank" rel="noopener noreferrer" className="flex px-4 border border-white rounded-xl items-center gap-2 hover:bg-white/20 transition-colors duration-200">
-                                    <Linkedin className="w-5 h-5" />
-                                    <span className="hidden sm:inline">LinkedIn</span>
-                                </a>
-                                <a 
-                                    href="mailto:hemmanuelmtz777@gmail.com"
-                                    className="flex px-4 border border-white rounded-xl items-center gap-2 min-w-0 hover:bg-white/20 transition-colors duration-200"
-                                    >
-                                    <Mail className="w-5 h-5 flex-shrink-0" />
-                                    <span className="text-sm truncate">hemmanuelmtz777@gmail.com</span>
-                                </a>
-                            </div>
-
-                        </AnimatedContent>
-                        </div>
-                        
-                    </div>
-                    <AnimatedContent  active={hydrated}>
-                         <a
-                            href={getCVFile()}
-                            download
-                            onClick={() =>
-                                trackEvent("download_cv", {
-                                    file_name: getCVFile().split("/").pop(),
-                                    location: "about_section"
-                                })
-                                }
-                            className="text-white inline-block mt-4 px-6 py-3 border border-white rounded-xl
-                           hover:bg-white/20 transition-colors duration-200"
-                            >
-                            Descargar CV
-                        </a>
-                    </AnimatedContent>
-                   
-                </div>
-                
-            </div>
-        </section>
-    );
+            <a
+              href={getCVFile()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-white px-6 py-3 rounded-xl hover:bg-white/20 hover:scale-110 transition-all duration-400"
+            >
+              Ver CV
+            </a>
+          </div>
+        </div>
+        <div>
+            <img
+              src="/img/Yo.webp"
+              alt="Yo"
+              className="w-40 md:w-220 lg:w-80 rounded-2xl me"
+              loading="lazy"
+            />
+        </div>
+      </div>
+    </section>
+  );
 }
