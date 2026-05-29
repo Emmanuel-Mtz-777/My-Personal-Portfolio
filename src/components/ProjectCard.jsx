@@ -1,16 +1,13 @@
+import '../styles/scroll.css';
+import '../styles/scroll.css';
+import '../styles/cards.css';
+
 export default function ProjectCard({ project }) {
   const { title, description, github, image, repository } = project;
 
   return (
     <article
-      className="
-        w-full max-w-[720px]
-        flex flex-col gap-6
-        px-4 py-6
-        rounded-3xl
-        bg-[#1c2430]/40
-        border border-gray-700
-      "
+      className="card scrollCard"
     >
       <h3 className="text-lg sm:text-2xl font-bold text-white">
         {title}

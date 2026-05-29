@@ -3,8 +3,7 @@
     "role": "Desarrollador Web Fullstack",
     "greeting": "¡Hola! Soy Emmanuel Martínez",
     "imageAlt": "Imagen IA de mi estilo anterior con cabello rubio",
-    "description": "Enfocado en crear soluciones funcionales y bien estructuradas.",
-    "completeDescription":"Me gusta transformar ideas en proyectos reales utilizando herramientas modernas y manteniéndome en constante crecimiento profesional.",
+    "description": "Apasionado por el desarrollo web, la arquitectura backend y los contenedores. Me gusta crear aplicaciones completas desde la interfaz hasta el servidor, desarrollando APIs, integrando servicios y construyendo soluciones enfocadas en rendimiento, organización y escalabilidad utilizando diversas tecnologías.",
     "location": "Aguascalientes, Ags., México 🇲🇽"
   },
   "nav": {
@@ -19,29 +18,32 @@
   "experience": {
   "title": "Experiencia laboral",
   "items": [
-    {
-      "position": "Desarrollador Móvil Frontend",
-      "company": "Swopyn Business Software Solutions",
-      "duration": "Septiembre 2025 - Febrero 2026",
-      "description": [
-        "Desarrollo de interfaces móviles utilizando React Native.",
-        "Consumo de APIs y manejo de peticiones y servicios.",
-        "Implementación de custom hooks para optimizar la lógica y reutilización de componentes.",
-        "Participación en la construcción de una aplicación móvil de portal administrativo basada en una versión existente."
-      ]
-    },
-    {
-      "position": "TICs y Soporte Tecnológico",
-      "company": "Instituto Tecnológico de Aguascalientes",
-      "duration": "Octubre 2024 - Junio 2025",
-      "description": [
-        "Apoyo en proyectos académicos relacionados con Tecnologías de la Información y la Comunicación (TICs) y entornos de prueba.",
-        "Desarrollo y soporte de un sistema de asistente de casa inteligente para personas con discapacidad auditiva.",
-        "Diseño, cableado y configuración de redes, incluyendo distribución de internet desde rack hacia equipos de cómputo.",
-        "Instalación, configuración y mantenimiento de cámaras IP y analógicas, así como reparación de DVRs.",
-        "Configuración de entornos de prueba académicos y soporte técnico de software y hardware."
-      ]
-    }
+{
+    "position": "Mobile Frontend Developer",
+    "company": "Swopyn Business Software Solutions",
+    "duration": "Enero 2025 - Febrero 2026",
+    "description": [
+      "Desarrollo y mantenimiento de aplicaciones móviles multiplataforma utilizando React Native para sistemas administrativos.",
+      "Implementación de interfaces intuitivas, accesibles y centradas en la experiencia del usuario.",
+      "Integración y manejo de funcionalidades nativas como el acceso a cámara dentro de aplicaciones móviles.",
+      "Consumo e integración de APIs REST, manejo de estados y control de errores para sincronización de datos.",
+      "Desarrollo de lógica reutilizable mediante custom hooks y componentes modulares.",
+      "Participación en mantenimiento de código existente e implementación de nuevas funcionalidades.",
+      "Colaboración con equipos de desarrollo siguiendo metodologías ágiles y flujos de trabajo con Git."
+    ]
+  },
+  {
+    "position": "Desarrollador de Prototipo IoT",
+    "company": "Acustia, Instituto Tecnológico de Aguascalientes",
+    "duration": "Junio 2024 - Diciembre 2024",
+    "description": [
+      "Desarrollo de un prototipo IoT de casa inteligente enfocado en accesibilidad para personas con discapacidad auditiva.",
+      "Configuración y administración de servicios Linux sobre Raspberry Pi para automatización y entornos de prueba.",
+      "Automatización de procesos y comunicación entre dispositivos utilizando JavaScript.",
+      "Integración de componentes de hardware y software para monitoreo y control en tiempo real.",
+      "Aplicación de lógica difusa para automatización adaptativa y toma de decisiones."
+    ]
+  }
   ]},
     "projects": {
     "title": "Proyectos",

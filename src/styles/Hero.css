@@ -1,0 +1,12 @@
+.me {
+  -webkit-mask-image:
+    linear-gradient(to bottom, black 80%, transparent),
+    linear-gradient(to right, black 80%, transparent);
+
+  mask-image:
+    linear-gradient(to bottom, black 80%, transparent),
+    linear-gradient(to right, black 80%, transparent);
+
+  -webkit-mask-composite: intersect;
+  mask-composite: intersect;
+}

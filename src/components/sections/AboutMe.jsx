@@ -1,5 +1,4 @@
 import "../../config/i18n";
-import GlareHover from "../effects/GlareHover";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import {trackEvent} from "../../utils/analiticsTrackEvent.js";
@@ -82,17 +81,6 @@ export default function AboutMe() {
         </div>
 
         
-          <GlareHover
-            glareColor="#ffffff"
-            glareOpacity={0.3}
-            glareAngle={-30}
-            glareSize={300}
-            transitionDuration={800}
-            playOnce={false}
-          >
-            <img src="/img/Yo.avif" alt="Yo" className="w-80 h-auto sm:w-100" loading="lazy"/>
-          </GlareHover>
-
       </div>
     </section>
   );
