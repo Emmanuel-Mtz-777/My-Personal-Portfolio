@@ -2,6 +2,8 @@
 import { HiMenu, HiX, HiHome, HiFolder, HiBriefcase, HiAcademicCap, HiUser } from "react-icons/hi";
 import es from '../../langs/es.json';
 import en from '../../langs/en.json';
+import { Image } from "astro:assets";
+import Logo from '../../assets/img/Logo.webp';
 
 const lang = Astro.currentLocale || "es";
 
@@ -19,11 +21,13 @@ const navItems = [
 <header class="fixed top-0 left-0 w-full z-40 backdrop-blur-sm">
   <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between h-20 items-center">
     
-    <img
-      src="/img/Logo.webp"
+    <Image
+      src={Logo}
       alt="Logo"
       width="80"
       height="80"
+      loading="eager"
+      fetchpriority="high"
       class="object-contain h-20"
     />
 
@@ -80,12 +84,14 @@ const navItems = [
   class="fixed inset-0 z-[999] bg-black/80 backdrop-blur-md translate-x-full transition-transform duration-300"
 >
   <div class="flex justify-between p-4">
-    <img
-      src="/img/Logo.webp"
+    <Image
+      src={Logo}
       alt="Logo"
       width="80"
       height="80"
-      class="w-20"
+      loading="eager"
+      fetchpriority="high"
+      class="object-contain h-20"
     />
 
     <button
