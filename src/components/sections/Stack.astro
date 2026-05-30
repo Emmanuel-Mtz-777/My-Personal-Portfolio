@@ -1,0 +1,257 @@
+---
+import es from "../../langs/es.json";
+import en from "../../langs/en.json";
+import AstroIcon from "../icons/tec/frontend/Astro.astro";
+import Css from "../icons/tec/frontend/Css.jsx";
+import Docker from "../icons/tec/tools/Docker.jsx";
+import Express from "../icons/tec/backend/Express.jsx";
+import Git from "../icons/tec/tools/Git.jsx";
+import Html from "../icons/tec/frontend/Html.jsx";
+import Javascript from "../icons/tec/langs/Javascript.jsx";
+import Laravel from "../icons/tec/backend/Laravel.jsx";
+import Mysql from "../icons/tec/db/Mysql.jsx";
+import Nodejs from "../icons/tec/backend/Node.jsx";
+import ReactIcon from "../icons/tec/frontend/React.jsx";
+import Tailwind from "../icons/tec/frontend/Tailwind.jsx";
+import Expo from "../icons/tec/frontend/Expo.astro";
+import Typescript from "../icons/tec/langs/Typescript.jsx";
+import Vue from "../icons/tec/frontend/Vue.jsx";
+import Java from "../icons/tec/langs/Java.astro";
+import PhP from "../icons/tec/langs/PhP.astro";
+import Python from "../icons/tec/langs/Python.astro";
+import SQLite from "../icons/tec/db/SQLite.astro";
+import SpringBoot from "../icons/tec/backend/SpringBoot.astro";
+import ElasticSearch from "../icons/tec/db/ElasticSearch.jsx";
+import Supabase from "../icons/tec/db/Supabase.astro";
+import Netlify from "../icons/tec/tools/Netlify.astro";
+import Particles from "../effects/Particles.jsx";
+
+const { lang = "es" } = Astro.props;
+
+const t = lang === "es" ? es : en;
+const frontendLogos = [
+  { icon: Html, title: "HTML" },
+  { icon: Css, title: "CSS" },
+  { icon: Tailwind, title: "Tailwind CSS" },
+  { icon: AstroIcon, title: "Astro" },
+  { icon: Vue, title: "Vue.js" },
+  { icon: ReactIcon, title: "React" },
+  { icon: Expo, title: "Expo" },
+];
+
+const languajes = [
+  { icon: Javascript, title: "JavaScript" },
+  { icon: Typescript, title: "TypeScript" },
+  { icon: Java, title: "Java" },
+  { icon: PhP, title: "PHP" },
+  { icon: Python, title: "Python" },
+];
+
+const databaseLogos = [
+  { icon: Mysql, title: "MySQL" },
+  { icon: SQLite, title: "SQLite" },
+  { icon: ElasticSearch, title: "ElasticSearch" },
+  { icon: Supabase, title: "Supabase" },
+];
+
+const backendLogos = [
+  { icon: Nodejs, title: "Node.js" },
+  { icon: Express, title: "Express" },
+  { icon: Laravel, title: "Laravel" },
+  { icon: SpringBoot, title: "Spring Boot" },
+];
+
+const toolsLogos = [
+  { icon: Docker, title: "Docker" },
+  { icon: Git, title: "Git" },
+  { icon: Netlify, title: "Netlify" },
+];
+---
+
+<section id="stack" class="relative w-full flex flex-col items-center pt-20">
+  <h2 class="text-2xl sm:text-4xl font-bold text-white mb-12 text-start">
+    {t.stack.title}
+  </h2>
+
+  <div class="w-full max-w-4xl flex flex-col gap-6 px-4">
+    <div
+      class="h-auto relative overflow-hidden border border-white rounded-lg p-4 z-10"
+    >
+      <div class="absolute w-full h-full z-10 inset-0">
+        <Particles
+          client:load
+          particleColors={["#06B6D4", "#3B82F6", "#9333EA", "#EC4899"]}
+          particleCount={100}
+          particleSpread={20}
+          speed={0.5}
+          particleBaseSize={80}
+          alphaParticles={false}
+          disableRotation={false}
+          pixelRatio={1}
+        />
+      </div>
+      <h3 class="text-2xl text-white font-semibold mb-4">{t.stack.lang}</h3>
+      <div
+        class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 justify-items-center"
+      >
+        {
+          languajes.map((item, index) => (
+            <div
+              class="flex flex-col items-center justify-center gap-3 z-20
+             bg-zinc-700/20 rounded-lg p-3
+             w-full max-w-28 aspect-square  hover:scale-110 hover:bg-zinc-800 hover:border hover:border-white transition-all duration-300"
+            >
+              <item.icon style={{ width: "28px", height: "28px" }} />
+              <span class="text-white text-xs text-center">{item.title}</span>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+
+    <div class="flex flex-col sm:flex-row gap-4">
+      <!-- Backend -->
+      <div
+        class="h-auto w-2/3 relative overflow-hidden border border-white rounded-lg p-4 z-10"
+      >
+        <div class="absolute w-full h-full z-10 inset-0">
+          <Particles
+            client:load
+            particleColors={["#06B6D4", "#3B82F6", "#9333EA", "#EC4899"]}
+            particleCount={100}
+            particleSpread={20}
+            speed={0.5}
+            particleBaseSize={100}
+            alphaParticles={false}
+            disableRotation={false}
+            pixelRatio={1}
+          />
+        </div>
+        <h3 class="text-2xl text-white font-semibold mb-4">
+          {t.stack.frontend}
+        </h3>
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 justify-items-center"
+        >
+          {
+            frontendLogos.map((item, index) => (
+              <div
+                class="flex flex-col items-center justify-center gap-3 z-20
+             bg-zinc-700/20 rounded-lg p-3
+             w-full max-w-28 aspect-square  hover:scale-110 hover:bg-zinc-800 hover:border hover:border-white transition-all duration-300"
+              >
+                <item.icon style={{ width: "28px", height: "28px" }} />
+                <span class="text-white text-xs text-center">{item.title}</span>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+      <div
+        class="h-auto w-1/3 relative overflow-hidden border border-white rounded-lg p-4 z-10"
+      >
+        <div class="absolute w-full h-full z-10 inset-0">
+          <Particles
+            client:load
+            particleColors={["#06B6D4", "#3B82F6", "#9333EA", "#EC4899"]}
+            particleCount={100}
+            particleSpread={20}
+            speed={0.5}
+            particleBaseSize={100}
+            alphaParticles={false}
+            disableRotation={false}
+            pixelRatio={1}
+          />
+        </div>
+        <h3 class="text-2xl text-white font-semibold mb-4">{t.stack.db}</h3>
+        <div class="grid grid-cols-2 gap-3 justify-items-center">
+          {
+            databaseLogos.map((item, index) => (
+              <div
+                class="flex flex-col items-center justify-center gap-3 z-20
+             bg-zinc-700/20 rounded-lg p-3
+             w-full max-w-28 aspect-square hover:scale-110 hover:bg-zinc-800 hover:border hover:border-white transition-all duration-300"
+              >
+                <item.icon style={{ width: "28px", height: "28px" }} />
+                <span class="text-white text-xs text-center">{item.title}</span>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col sm:flex-row gap-4">
+      <!-- Backend -->
+      <div
+        class="h-auto w-2/3 relative overflow-hidden border border-white rounded-lg p-4 z-10 w-1/2"
+      >
+        <div class="absolute w-full h-full z-10 inset-0">
+          <Particles
+            client:load
+            particleColors={["#06B6D4", "#3B82F6", "#9333EA", "#EC4899"]}
+            particleCount={100}
+            particleSpread={20}
+            speed={0.5}
+            particleBaseSize={100}
+            alphaParticles={false}
+            disableRotation={false}
+            pixelRatio={1}
+          />
+        </div>
+
+        <h3 class="text-2xl text-white font-semibold mb-4">
+          {t.stack.backend}
+        </h3>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 justify-items-center">
+          {
+            backendLogos.map((item, index) => (
+              <div
+                class="flex flex-col items-center justify-center gap-3 z-20
+             bg-zinc-700/20 rounded-lg p-3
+             w-full max-w-28 aspect-square  hover:scale-110 hover:bg-zinc-800 hover:border hover:border-white transition-all duration-300"
+              >
+                <item.icon style={{ width: "28px", height: "28px" }} />
+                <span class="text-white text-xs text-center">{item.title}</span>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div
+        class="h-auto w-2/3 relative overflow-hidden border border-white rounded-lg p-4 z-10 w-1/2"
+      >
+        <div class="absolute w-full h-full z-10 inset-0">
+          <Particles
+            client:load
+            particleColors={["#06B6D4", "#3B82F6", "#9333EA", "#EC4899"]}
+            particleCount={100}
+            particleSpread={20}
+            speed={0.5}
+            particleBaseSize={100}
+            alphaParticles={false}
+            disableRotation={false}
+            pixelRatio={1}
+          />
+        </div>
+        <h3 class="text-2xl text-white font-semibold mb-4">{t.stack.tools}</h3>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 justify-items-center">
+          {
+            toolsLogos.map((item, index) => (
+              <div
+                class="flex flex-col items-center justify-center gap-3 z-20
+             bg-zinc-700/20 rounded-lg p-3
+             w-full max-w-28 aspect-square  hover:scale-110 hover:bg-zinc-800 hover:border hover:border-white transition-all duration-300"
+              >
+                <item.icon style={{ width: "28px", height: "28px" }} />
+                <span class="text-white text-xs text-center">{item.title}</span>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

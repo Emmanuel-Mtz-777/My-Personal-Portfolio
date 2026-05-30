@@ -1,21 +1,21 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Hero from '../components/sections/Hero.jsx';
-import Header from '../components/navigation/Header.jsx';
-import Projects from '../components/sections/Projects.jsx';
-import AboutMe from '../components/sections/AboutMe.jsx';
-import Stack from '../components/sections/Stack.jsx';
-import Certifications from '../components/sections/Certifications.jsx';
-import Experience from '../components/sections/Experience.jsx';
-import "../config/i18n";
+import Hero from '../components/sections/Hero.astro';
+import Header from '../components/navigation/Header.astro';
+import Projects from '../components/sections/Projects.astro';
+import AboutMe from '../components/sections/AboutMe.astro';
+import Stack from '../components/sections/Stack.astro';
+import Certifications from '../components/sections/Certifications.astro';
+import Experience from '../components/sections/Experience.astro';
+
 ---
 
 <Layout>
-	<Header client:load/>
-	<Hero client:load/>
-	<Experience client:load/>
-	<Projects client:load/> 
-	<Stack client:load/>
-	<Certifications client:load/>
-	<AboutMe client:load/>
+	<Header/>
+	<Hero/>
+	<Experience/>
+	<Projects/> 
+	<Stack/>
+	<Certifications/>
+	<AboutMe/>
 </Layout>

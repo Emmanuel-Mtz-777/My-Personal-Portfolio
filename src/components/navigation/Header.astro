@@ -1,0 +1,153 @@
+---
+import { HiMenu, HiX, HiHome, HiFolder, HiBriefcase, HiAcademicCap, HiUser } from "react-icons/hi";
+import es from '../../langs/es.json';
+import en from '../../langs/en.json';
+
+const lang = Astro.currentLocale || "es";
+
+const t = lang === "es" ? es : en;
+
+const navItems = [
+  { id: "home", label: t.nav.home, icon: HiHome },
+  { id: "experience", label: t.nav.experience, icon: HiBriefcase },
+  { id: "projects", label: t.nav.projects, icon: HiFolder },
+  { id: "certifications", label: t.nav.certifications, icon: HiAcademicCap },
+  { id: "about", label: t.nav.about, icon: HiUser },
+];
+---
+
+<header class="fixed top-0 left-0 w-full z-40 backdrop-blur-sm">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between h-20 items-center">
+    
+    <img
+      src="/img/Logo.webp"
+      alt="Logo"
+      width="80"
+      height="80"
+      class="object-contain h-20"
+    />
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex gap-6 text-lg font-semibold text-white/90">
+      {navItems.map((item) => (
+        <button
+          class="hover:text-white transition"
+          data-scroll={item.id}
+        >
+          {item.label}
+        </button>
+      ))}
+    </nav>
+
+    <!-- Language Switch -->
+    <div class="flex items-center bg-white/10 rounded-full p-1 backdrop-blur-sm">
+      <a
+        href="/es/"
+        class={`px-4 py-1.5 rounded-full text-sm font-semibold transition-all duration-300 ${
+          lang === "es"
+            ? "bg-white text-black shadow-md"
+            : "text-white/60 hover:text-white"
+        }`}
+      >
+        ES
+      </a>
+
+      <a
+        href="/en/"
+        class={`px-4 py-1.5 rounded-full text-sm font-semibold transition-all duration-300 ${
+          lang === "en"
+            ? "bg-white text-black shadow-md"
+            : "text-white/60 hover:text-white"
+        }`}
+      >
+        EN
+      </a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button
+      id="open-menu"
+      class="md:hidden text-white text-2xl"
+    >
+      <HiMenu />
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div
+  id="mobile-menu"
+  class="fixed inset-0 z-[999] bg-black/80 backdrop-blur-md translate-x-full transition-transform duration-300"
+>
+  <div class="flex justify-between p-4">
+    <img
+      src="/img/Logo.webp"
+      alt="Logo"
+      width="80"
+      height="80"
+      class="w-20"
+    />
+
+    <button
+      id="close-menu"
+      class="text-white text-3xl"
+    >
+      <HiX />
+    </button>
+  </div>
+
+  <nav class="flex flex-col px-10 justify-start gap-10 text-white text-lg">
+    {navItems.map((item) => {
+      const Icon = item.icon;
+
+      return (
+        <a
+          href={`#${item.id}`}
+          class="flex items-center gap-3 hover:text-purple-400 transition mobile-link"
+        >
+          <span class="text-2xl">
+            <Icon />
+          </span>
+
+          {item.label}
+        </a>
+      );
+    })}
+  </nav>
+</div>
+
+<script lang="ts">
+  const mobileMenu = document.getElementById("mobile-menu");
+  const openMenu = document.getElementById("open-menu");
+  const closeMenu = document.getElementById("close-menu");
+
+  openMenu?.addEventListener("click", () => {
+    mobileMenu?.classList.remove("translate-x-full");
+  });
+
+  closeMenu?.addEventListener("click", () => {
+    mobileMenu?.classList.add("translate-x-full");
+  });
+
+  document.querySelectorAll("[data-scroll]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const id = button.getAttribute("data-scroll");
+
+      const element = document.getElementById(id);
+
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    });
+  });
+
+  document.querySelectorAll(".mobile-link").forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu?.classList.add("translate-x-full");
+    });
+  });
+</script>
+
