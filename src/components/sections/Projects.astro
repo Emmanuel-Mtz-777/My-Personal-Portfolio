@@ -1,0 +1,50 @@
+---
+import es from "../../langs/es.json";
+import en from "../../langs/en.json";
+import ProjectCard from "../ProjectCard.astro";
+import spotifyImg from "../../assets/projects/Spotify-Insights.avif";
+import snackifyImg from "../../assets/projects/Snackify.avif";
+import citaImg from "../../assets/projects/C-Ita.avif";
+import meet2goImg from "../../assets/projects/Meet2Go.avif";
+
+
+const { lang = "es" } = Astro.props;
+
+const t = lang === "es" ? es : en;
+
+const images = [
+  spotifyImg,
+  snackifyImg,
+  citaImg,
+  meet2goImg
+];
+
+const projects = (t.projects.items || []).map((proj, index) => ({
+  id: proj.id,
+  title: proj.name,
+  description: proj.description,
+  github: proj.githubLink,
+  repository: proj.repository,
+  image: images[index] || null,
+  imageAlt: proj.imageAlt || proj.name,
+  tags: proj.technologies || [],
+}));
+---
+
+<section
+  id="projects"
+  class="relative min-h-screen w-full flex flex-col items-center pt-20"
+>
+  <h2 class="text-2xl sm:text-4xl font-bold text-white mb-12 text-start">
+    {t.projects.title}
+  </h2>
+
+  <div class="w-full flex flex-col gap-10 items-center px-4">
+    {projects.map((project) => (
+      <div class="project-card">
+        <ProjectCard project={project} />
+      </div>
+    ))}
+  </div>
+</section>
+

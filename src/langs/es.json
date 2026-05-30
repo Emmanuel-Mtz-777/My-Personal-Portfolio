@@ -9,7 +9,7 @@
   "nav": {
     "home": "Inicio",
     "projects": "Proyectos",
-    "stack": "Stack",
+    "stack": "Habilidades Técnicas",
     "certifications": "Certificaciones",
     "about": "Sobre mí",
     "contact": "Contacto",
@@ -106,9 +106,12 @@
     ]
   },
     "stack": {
-      "title": "Stack Tecnológico",
-      "description": "Mi stack tecnológico se enfoca en el desarrollo frontend, backend y el manejo de datos, permitiéndome construir aplicaciones completas y bien estructuradas.",
-      "completeDescription": "Esta base técnica me da la flexibilidad de adaptarme a diferentes necesidades, integrar múltiples tecnologías y entregar soluciones funcionales y escalables."
+      "title": "Habilidades técnicas",
+      "lang": "Lenguajes de programación",
+      "db": "Bases de datos",
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "tools": "Herramientas"
   },
   "certifications": {
     "title": "Mis Certificaciones",
