@@ -1,0 +1,13 @@
+---
+const { href, label } = Astro.props;
+---
+
+<a
+  href={href}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="flex p-2 border border-white rounded-xl px-4 items-center gap-2 hover:bg-white/20 hover:scale-110 transition-all duration-400"
+>
+  <slot />
+  <span class="hidden sm:block">{label}</span>
+</a>

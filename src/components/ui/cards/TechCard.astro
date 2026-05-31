@@ -1,0 +1,54 @@
+---
+import Particles from "../../effects/Particles.jsx";
+import '../../../styles/scroll.css';
+
+const {
+  title,
+  items,
+  cols = "grid-cols-2 sm:grid-cols-3",
+  class: className = "",
+  particleBaseSize = 80,
+} = Astro.props;
+---
+
+<div
+  class={`relative overflow-hidden border border-white rounded-lg p-4 z-10 ${className} scrollCard`}
+>
+  <div class="absolute inset-0 w-full h-full z-10">
+    <Particles
+      client:load
+      particleColors={["#06B6D4", "#3B82F6", "#9333EA", "#EC4899"]}
+      particleCount={100}
+      particleSpread={20}
+      speed={0.5}
+      particleBaseSize={particleBaseSize}
+      alphaParticles={false}
+      disableRotation={false}
+      pixelRatio={1}
+    />
+  </div>
+
+  <h3 class="text-2xl text-white font-semibold mb-4 z-20 relative">
+    {title}
+  </h3>
+
+  <div class={`grid ${cols} gap-3 justify-items-center relative z-20`}>
+    {
+      items.map((item) => (
+        <div
+          class="flex flex-col items-center justify-center gap-3
+          bg-zinc-700/20 rounded-lg p-3
+          w-full max-w-28 aspect-square
+          hover:scale-110 hover:bg-zinc-800
+          hover:border hover:border-white
+          transition-all duration-300"
+        >
+          <item.icon style={{ width: "30px", height: "30px" }} />
+          <span class="text-white text-xs text-center">
+            {item.title}
+          </span>
+        </div>
+      ))
+    }
+  </div>
+</div>
