@@ -1,0 +1,27 @@
+---
+const { exp } = Astro.props;
+import '../../../styles/cards.css';
+import '../../../styles/scroll.css';
+---
+
+<div class="w-full flex items-center justify-center relative">
+  <div class="card scrollCard">
+    <h3 class="text-xl sm:text-2xl font-semibold text-white">
+      {exp.position}
+    </h3>
+
+    <p class="text-gray-100 text-lg font-medium">
+      {exp.company}
+    </p>
+
+    <p class="text-gray-300 text-sm">
+      {exp.duration}
+    </p>
+
+    <ul class="mt-4 list-disc pl-5 text-gray-300 space-y-2">
+      {exp.description.map((item) => (
+        <li class="leading-relaxed">{item}</li>
+      ))}
+    </ul>
+  </div>
+</div>

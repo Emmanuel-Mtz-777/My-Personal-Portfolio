@@ -1,0 +1,56 @@
+---
+import DataCience from "../../../assets/certificates/DataCience.webp";
+import IntroductionNetworks from "../../../assets/certificates/IntroductionNetworks.webp";
+import Linux from "../../../assets/certificates/Linux.webp";
+import Networking from "../../../assets/certificates/Networking.webp";
+import NetworkSecurity from "../../../assets/certificates/NetworkSecurity.webp";
+import Switching from "../../../assets/certificates/Switching.webp";
+import { Image } from "astro:assets";
+import '../../../styles/scroll.css';
+
+const { certifications } = Astro.props;
+
+const images = [
+  NetworkSecurity,
+  Networking,
+  Linux,
+  Switching,
+  DataCience,
+  IntroductionNetworks,
+];
+
+const certificates = (certifications.items || []).map((cert, index) => ({
+  id: index,
+  name: cert.name,
+  date: cert.date,
+  issuer: cert.issuer,
+  image: images[index] || null,
+}));
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+  {
+    certificates.map((cert) => (
+      <div class="relative w-full overflow-hidden border-l border-white p-4 shadow-[16px_14px_20px_rgba(8,8,8,0.55)] flex flex-col gap-2 bg-[#0a0a0a] scrollCard">
+        <div>
+          <Image
+            src={cert.image}
+            alt={cert.name}
+            class="w-full rounded-lg mb-4"
+          />
+        </div>
+        <div class="w-full h-14 flex items-center">
+          <h3 class="text-2xl font-semibold text-cyan-400">{cert.name}</h3>
+        </div>
+
+        <p class="text-gray-400 text-md font-semibold">
+          Fecha de emisión: {cert.date}
+        </p>
+
+        <p class="text-gray-300 text-lg font-bold">
+          Emitido por: {cert.issuer}
+        </p>
+      </div>
+    ))
+  }
+</div>

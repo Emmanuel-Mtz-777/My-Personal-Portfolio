@@ -10,42 +10,43 @@
     "home": "Inicio",
     "projects": "Proyectos",
     "stack": "Habilidades Técnicas",
-    "certifications": "Certificaciones",
+    "education": "Educación",
     "about": "Sobre mí",
     "contact": "Contacto",
     "experience": "Experiencia"
   },
   "experience": {
-  "title": "Experiencia laboral",
-  "items": [
-{
-    "position": "Mobile Frontend Developer",
-    "company": "Swopyn Business Software Solutions",
-    "duration": "Enero 2025 - Febrero 2026",
-    "description": [
-      "Desarrollo y mantenimiento de aplicaciones móviles multiplataforma utilizando React Native para sistemas administrativos.",
-      "Implementación de interfaces intuitivas, accesibles y centradas en la experiencia del usuario.",
-      "Integración y manejo de funcionalidades nativas como el acceso a cámara dentro de aplicaciones móviles.",
-      "Consumo e integración de APIs REST, manejo de estados y control de errores para sincronización de datos.",
-      "Desarrollo de lógica reutilizable mediante custom hooks y componentes modulares.",
-      "Participación en mantenimiento de código existente e implementación de nuevas funcionalidades.",
-      "Colaboración con equipos de desarrollo siguiendo metodologías ágiles y flujos de trabajo con Git."
+    "title": "Experiencia laboral",
+    "items": [
+      {
+        "position": "Mobile Frontend Developer",
+        "company": "Swopyn Business Software Solutions",
+        "duration": "Enero 2025 - Febrero 2026",
+        "description": [
+          "Desarrollo y mantenimiento de aplicaciones móviles multiplataforma utilizando React Native para sistemas administrativos.",
+          "Implementación de interfaces intuitivas, accesibles y centradas en la experiencia del usuario.",
+          "Integración y manejo de funcionalidades nativas como el acceso a cámara dentro de aplicaciones móviles.",
+          "Consumo e integración de APIs REST, manejo de estados y control de errores para sincronización de datos.",
+          "Desarrollo de lógica reutilizable mediante custom hooks y componentes modulares.",
+          "Participación en mantenimiento de código existente e implementación de nuevas funcionalidades.",
+          "Colaboración con equipos de desarrollo siguiendo metodologías ágiles y flujos de trabajo con Git."
+        ]
+      },
+      {
+        "position": "Desarrollador de Prototipo IoT",
+        "company": "Acustia, Instituto Tecnológico de Aguascalientes",
+        "duration": "Junio 2024 - Diciembre 2024",
+        "description": [
+          "Desarrollo de un prototipo IoT de casa inteligente enfocado en accesibilidad para personas con discapacidad auditiva.",
+          "Configuración y administración de servicios Linux sobre Raspberry Pi para automatización y entornos de prueba.",
+          "Automatización de procesos y comunicación entre dispositivos utilizando JavaScript.",
+          "Integración de componentes de hardware y software para monitoreo y control en tiempo real.",
+          "Aplicación de lógica difusa para automatización adaptativa y toma de decisiones."
+        ]
+      }
     ]
   },
-  {
-    "position": "Desarrollador de Prototipo IoT",
-    "company": "Acustia, Instituto Tecnológico de Aguascalientes",
-    "duration": "Junio 2024 - Diciembre 2024",
-    "description": [
-      "Desarrollo de un prototipo IoT de casa inteligente enfocado en accesibilidad para personas con discapacidad auditiva.",
-      "Configuración y administración de servicios Linux sobre Raspberry Pi para automatización y entornos de prueba.",
-      "Automatización de procesos y comunicación entre dispositivos utilizando JavaScript.",
-      "Integración de componentes de hardware y software para monitoreo y control en tiempo real.",
-      "Aplicación de lógica difusa para automatización adaptativa y toma de decisiones."
-    ]
-  }
-  ]},
-    "projects": {
+  "projects": {
     "title": "Proyectos",
     "items": [
       {
@@ -83,9 +84,7 @@
         "imageAlt": "Captura de pantalla de C-Ita",
         "name": "C-Ita",
         "description": "Proyecto frontend desarrollado en Kotlin, enfocado en crear una red social al estilo Facebook para estudiantes del ITA. Permite la interacción entre usuarios mediante publicaciones, utilizando tanto una base de datos local SQLite como una API externa desarrollada en Node.js con conexión a una base de datos MySQL.",
-        "technologies": [
-          "Kotlin"
-        ],
+        "technologies": ["Kotlin"],
         "repository": "Ver repositorio",
         "githubLink": "https://github.com/Emmanuel-Mtz-777/Cita"
       },
@@ -94,69 +93,59 @@
         "imageAlt": "Captura de pantalla de Meet2go",
         "name": "Meet2go",
         "description": "Aplicación móvil multiplataforma desarrollada con React Native y Supabase para conectar personas con intereses similares y organizar eventos grupales. Incluye perfiles de usuario, gestión de eventos y un sistema de chat en tiempo real basado en un microservicio con Express desplegado en Heroku.",
-        "technologies": [
-          "React",
-          "React Native",
-          "Supabase",
-          "Express"
-        ],
+        "technologies": ["React", "React Native", "Supabase", "Express"],
         "repository": "Ver repositorio",
         "githubLink": "https://github.com/Emmanuel-Mtz-777/meet2Go"
       }
     ]
   },
-    "stack": {
-      "title": "Habilidades técnicas",
-      "lang": "Lenguajes de programación",
-      "db": "Bases de datos",
-      "backend": "Backend",
-      "frontend": "Frontend",
-      "tools": "Herramientas"
+  "stack": {
+    "title": "Habilidades técnicas",
+    "lang": "Lenguajes de programación",
+    "db": "Bases de datos",
+    "backend": "Backend",
+    "frontend": "Frontend",
+    "tools": "Herramientas"
+  },
+  "education": {
+    "title": "Educación y certificaciones",
+    "date": "2021 - 2026",
+    "name": "Ingeniería en Tecnologías de la Información y las Comunicaciones",
+    "organization": "Instituto Tecnológico de Aguascalientes"
   },
   "certifications": {
-    "title": "Mis Certificaciones",
+    "title": "Educación y certificaciones",
     "items": [
       {
-        "date": "2021 - Actualidad",
-        "name": "Ingeniería en Tecnologías de la Información y las Comunicaciones",
-        "organization": "Instituto Tecnológico de Aguascalientes",
-        "description": "Estudiante en formación con enfoque en desarrollo de software, redes, bases de datos, inteligencia artificial y ciberseguridad. Participación en proyectos académicos, concursos tecnológicos y prácticas con herramientas modernas del ecosistema tecnológico.",
-        "details": "Ver detalles"
+        "date": "26 may 2025",
+        "name": "Network Security",
+        "issuer": "Cisco"
+
       },
       {
-        "date": "2024-12-13",
+        "date": "13 dic 2024",
         "name": "CCNA: Redes Empresariales, Seguridad y Automatización",
-        "organization": "Cisco",
-        "description": "Curso completado sobre arquitecturas de red escalables, enrutamiento dinámico, mitigación de amenazas de seguridad, redes de área amplia (WAN), virtualización y automatización de redes programables.",
-        "details": "Ver detalles"
+        "issuer": "Cisco"
       },
       {
-        "date": "2024-12-02",
+        "date": "02 dic 2024",
         "name": "Linux Unhatched",
-        "organization": "Cisco (en colaboración con NDG)",
-        "description": "Certificación de conocimientos básicos sobre el uso de la terminal de Linux, navegación entre directorios del sistema, creación, eliminación y movimiento de archivos, escritura de scripts simples, y gestión de permisos y propiedad de archivos.",
-        "details": "Ver detalles"
+        "issuer": "Cisco"
       },
       {
-        "date": "2023-12-07",
+        "date": "07 dic 2023",
         "name": "CCNA: Conmutación, Enrutamiento y Fundamentos Inalámbricos",
-        "organization": "Cisco",
-        "description": "Curso completo sobre operaciones de conmutación, configuración de redes LAN cableadas e inalámbricas utilizando prácticas recomendadas de seguridad, protocolos de redundancia y desarrollo de habilidades para la resolución de problemas.",
-        "details": "Ver detalles"
+        "issuer": "Cisco"
       },
       {
-        "date": "2023-10-29",
+        "date": "29 oct 2023",
         "name": "Introducción a la Ciencia de Datos",
-        "organization": "Cisco",
-        "description": "Curso completado sobre los conceptos básicos de la ciencia de datos. El titular adquirió una comprensión general sobre analítica de datos, ingeniería de datos, ciencia de datos y funciones laborales relacionadas con IA y aprendizaje automático, así como una visión general de oportunidades profesionales en estas áreas.",
-        "details": "Ver detalles"
+        "issuer": "Cisco"
       },
       {
-        "date": "2023-05-30",
+        "date": "30 may 2023",
         "name": "CCNA: Introducción a Redes",
-        "organization": "Cisco",
-        "description": "Curso completado sobre fundamentos de redes. Se adquirió conocimiento en direccionamiento IP, funcionamiento de Ethernet, conmutación, subneteo y configuración de conectividad entre switches, routers y dispositivos finales.",
-        "details": "Ver detalles"
+        "issuer": "Cisco"
       }
     ]
   },
@@ -164,15 +153,28 @@
     "title": "Sobre mí",
     "identity": {
       "text": "Soy Emmanuel Martínez, Ingeniero en TIC. Apasionado por transformar ideas en soluciones reales.",
-      "highlight": ["Emmanuel Martínez", "Ingeniero en TIC", "transformar ideas en soluciones"]
+      "highlight": [
+        "Emmanuel Martínez",
+        "Ingeniero en TIC",
+        "transformar ideas en soluciones"
+      ]
     },
     "focus": {
       "text": "Exploro cómo funcionan los sistemas. Busco tomar buenas decisiones técnicas y mejorar continuamente.",
-      "highlight": ["cómo funcionan los sistemas", "buenas decisiones técnicas", "mejorar continuamente"]
+      "highlight": [
+        "cómo funcionan los sistemas",
+        "buenas decisiones técnicas",
+        "mejorar continuamente"
+      ]
     },
     "values": {
       "text": "Curioso y perseverante. Creo en la mejora continua, aprender de errores, y el valor del trabajo bien hecho.",
-      "highlight": ["Curioso y perseverante", "mejora continua", "aprender de errores", "trabajo bien hecho"]
+      "highlight": [
+        "Curioso y perseverante",
+        "mejora continua",
+        "aprender de errores",
+        "trabajo bien hecho"
+      ]
     }
   }
 }
