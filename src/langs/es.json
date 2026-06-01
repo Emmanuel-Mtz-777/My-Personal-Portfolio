@@ -7,9 +7,8 @@
     "location": "Aguascalientes, Ags., México 🇲🇽"
   },
   "nav": {
-    "home": "Inicio",
     "projects": "Proyectos",
-    "stack": "Habilidades Técnicas",
+    "skills": "Habilidades",
     "education": "Educación",
     "about": "Sobre mí",
     "contact": "Contacto",
@@ -84,7 +83,9 @@
         "imageAlt": "Captura de pantalla de C-Ita",
         "name": "C-Ita",
         "description": "Proyecto frontend desarrollado en Kotlin, enfocado en crear una red social al estilo Facebook para estudiantes del ITA. Permite la interacción entre usuarios mediante publicaciones, utilizando tanto una base de datos local SQLite como una API externa desarrollada en Node.js con conexión a una base de datos MySQL.",
-        "technologies": ["Kotlin"],
+        "technologies": [
+          "Kotlin"
+        ],
         "repository": "Ver repositorio",
         "githubLink": "https://github.com/Emmanuel-Mtz-777/Cita"
       },
@@ -93,7 +94,12 @@
         "imageAlt": "Captura de pantalla de Meet2go",
         "name": "Meet2go",
         "description": "Aplicación móvil multiplataforma desarrollada con React Native y Supabase para conectar personas con intereses similares y organizar eventos grupales. Incluye perfiles de usuario, gestión de eventos y un sistema de chat en tiempo real basado en un microservicio con Express desplegado en Heroku.",
-        "technologies": ["React", "React Native", "Supabase", "Express"],
+        "technologies": [
+          "React",
+          "React Native",
+          "Supabase",
+          "Express"
+        ],
         "repository": "Ver repositorio",
         "githubLink": "https://github.com/Emmanuel-Mtz-777/meet2Go"
       }
@@ -120,7 +126,6 @@
         "date": "26 may 2025",
         "name": "Network Security",
         "issuer": "Cisco"
-
       },
       {
         "date": "13 dic 2024",
@@ -149,32 +154,46 @@
       }
     ]
   },
-  "about": {
-    "title": "Sobre mí",
-    "identity": {
-      "text": "Soy Emmanuel Martínez, Ingeniero en TIC. Apasionado por transformar ideas en soluciones reales.",
-      "highlight": [
-        "Emmanuel Martínez",
-        "Ingeniero en TIC",
-        "transformar ideas en soluciones"
-      ]
-    },
-    "focus": {
-      "text": "Exploro cómo funcionan los sistemas. Busco tomar buenas decisiones técnicas y mejorar continuamente.",
-      "highlight": [
-        "cómo funcionan los sistemas",
-        "buenas decisiones técnicas",
-        "mejorar continuamente"
-      ]
-    },
-    "values": {
-      "text": "Curioso y perseverante. Creo en la mejora continua, aprender de errores, y el valor del trabajo bien hecho.",
-      "highlight": [
-        "Curioso y perseverante",
-        "mejora continua",
-        "aprender de errores",
-        "trabajo bien hecho"
-      ]
-    }
-  }
+  
+"about": {
+"title": "Sobre mí",
+"identity": {
+"text": "Soy Humberto Emmanuel Rosales Martínez, desarrollador Full Stack e Ingeniero en TIC. Mi interés por la tecnología nació de la curiosidad por entender cómo funcionan las cosas y terminó convirtiéndose en una pasión por construir software que resuelva problemas reales.",
+"highlight": [
+"Humberto Emmanuel Rosales Martínez",
+"desarrollador Full Stack",
+"Ingeniero en TIC",
+"entender cómo funcionan las cosas",
+"construir software",
+"resuelva problemas reales"
+]
+},
+"focus": {
+"text": "A lo largo de mi trayectoria he trabajado en aplicaciones web y móviles, APIs REST, automatización de procesos y proyectos IoT. Más allá de una tecnología específica, disfruto explorar sistemas completos, comprender cómo interactúan sus componentes y encontrar formas de hacerlos más eficientes, escalables y mantenibles.",
+"highlight": [
+"aplicaciones web y móviles",
+"APIs REST",
+"automatización de procesos",
+"proyectos IoT",
+"sistemas completos",
+"cómo interactúan sus componentes",
+"eficientes",
+"escalables",
+"mantenibles"
+]
+},
+"values": {
+"text": "Me considero una persona curiosa y perseverante. Disfruto aprender constantemente, enfrentar nuevos desafíos y mejorar mis habilidades tanto técnicas como personales. Creo que el crecimiento profesional surge de la combinación entre disciplina, aprendizaje continuo y la disposición de seguir construyendo incluso cuando las soluciones no son evidentes.",
+"highlight": [
+"curiosa y perseverante",
+"aprender constantemente",
+"nuevos desafíos",
+"habilidades técnicas",
+"crecimiento profesional",
+"disciplina",
+"aprendizaje continuo"
+]
 }
+}
+}
+
