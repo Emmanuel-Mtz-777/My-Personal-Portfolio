@@ -53,12 +53,6 @@
         "imageAlt": "Captura de pantalla de Spotify-Insights-with-Elasticsearch",
         "name": "Spotify-Insights-with-Elasticsearch",
         "description": "Análisis de Big Data con Elasticsearch sobre un dataset de canciones de Spotify. Permite consultar características como duración, energía y valencia, y visualizar los resultados en Jupyter Notebooks. Todo el entorno (Elasticsearch y Kibana) corre en contenedores Docker.",
-        "technologies": [
-          "Python",
-          "Jupyter Notebook",
-          "Elasticsearch",
-          "Docker"
-        ],
         "repository": "Ver repositorio",
         "githubLink": "https://github.com/Emmanuel-Mtz-777/Spotify-Insights-with-Elasticsearch"
       },
@@ -67,14 +61,6 @@
         "imageAlt": "Captura de pantalla de Snakify",
         "name": "Snakify",
         "description": "Proyecto frontend desarrollado para un E-commerce enfocado en la venta de postres en tiendas locales. Permite la interacción del usuario con la interfaz, dejando abierta la posibilidad de integrar un backend en el futuro.",
-        "technologies": [
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "TypeScript",
-          "Tailwind CSS",
-          "Astro"
-        ],
         "repository": "Ver repositorio",
         "githubLink": "https://github.com/Emmanuel-Mtz-777/Snackify"
       },
@@ -83,9 +69,6 @@
         "imageAlt": "Captura de pantalla de C-Ita",
         "name": "C-Ita",
         "description": "Proyecto frontend desarrollado en Kotlin, enfocado en crear una red social al estilo Facebook para estudiantes del ITA. Permite la interacción entre usuarios mediante publicaciones, utilizando tanto una base de datos local SQLite como una API externa desarrollada en Node.js con conexión a una base de datos MySQL.",
-        "technologies": [
-          "Kotlin"
-        ],
         "repository": "Ver repositorio",
         "githubLink": "https://github.com/Emmanuel-Mtz-777/Cita"
       },
@@ -94,12 +77,6 @@
         "imageAlt": "Captura de pantalla de Meet2go",
         "name": "Meet2go",
         "description": "Aplicación móvil multiplataforma desarrollada con React Native y Supabase para conectar personas con intereses similares y organizar eventos grupales. Incluye perfiles de usuario, gestión de eventos y un sistema de chat en tiempo real basado en un microservicio con Express desplegado en Heroku.",
-        "technologies": [
-          "React",
-          "React Native",
-          "Supabase",
-          "Express"
-        ],
         "repository": "Ver repositorio",
         "githubLink": "https://github.com/Emmanuel-Mtz-777/meet2Go"
       }
@@ -154,46 +131,44 @@
       }
     ]
   },
-  
-"about": {
-"title": "Sobre mí",
-"identity": {
-"text": "Soy Humberto Emmanuel Rosales Martínez, desarrollador Full Stack e Ingeniero en TIC. Mi interés por la tecnología nació de la curiosidad por entender cómo funcionan las cosas y terminó convirtiéndose en una pasión por construir software que resuelva problemas reales.",
-"highlight": [
-"Humberto Emmanuel Rosales Martínez",
-"desarrollador Full Stack",
-"Ingeniero en TIC",
-"entender cómo funcionan las cosas",
-"construir software",
-"resuelva problemas reales"
-]
-},
-"focus": {
-"text": "A lo largo de mi trayectoria he trabajado en aplicaciones web y móviles, APIs REST, automatización de procesos y proyectos IoT. Más allá de una tecnología específica, disfruto explorar sistemas completos, comprender cómo interactúan sus componentes y encontrar formas de hacerlos más eficientes, escalables y mantenibles.",
-"highlight": [
-"aplicaciones web y móviles",
-"APIs REST",
-"automatización de procesos",
-"proyectos IoT",
-"sistemas completos",
-"cómo interactúan sus componentes",
-"eficientes",
-"escalables",
-"mantenibles"
-]
-},
-"values": {
-"text": "Me considero una persona curiosa y perseverante. Disfruto aprender constantemente, enfrentar nuevos desafíos y mejorar mis habilidades tanto técnicas como personales. Creo que el crecimiento profesional surge de la combinación entre disciplina, aprendizaje continuo y la disposición de seguir construyendo incluso cuando las soluciones no son evidentes.",
-"highlight": [
-"curiosa y perseverante",
-"aprender constantemente",
-"nuevos desafíos",
-"habilidades técnicas",
-"crecimiento profesional",
-"disciplina",
-"aprendizaje continuo"
-]
+  "about": {
+    "title": "Sobre mí",
+    "identity": {
+      "text": "Soy Humberto Emmanuel Rosales Martínez, desarrollador Full Stack e Ingeniero en TIC. Mi interés por la tecnología nació de la curiosidad por entender cómo funcionan las cosas y terminó convirtiéndose en una pasión por construir software que resuelva problemas reales.",
+      "highlight": [
+        "Humberto Emmanuel Rosales Martínez",
+        "desarrollador Full Stack",
+        "Ingeniero en TIC",
+        "entender cómo funcionan las cosas",
+        "construir software",
+        "resuelva problemas reales"
+      ]
+    },
+    "focus": {
+      "text": "A lo largo de mi trayectoria he trabajado en aplicaciones web y móviles, APIs REST, automatización de procesos y proyectos IoT. Más allá de una tecnología específica, disfruto explorar sistemas completos, comprender cómo interactúan sus componentes y encontrar formas de hacerlos más eficientes, escalables y mantenibles.",
+      "highlight": [
+        "aplicaciones web y móviles",
+        "APIs REST",
+        "automatización de procesos",
+        "proyectos IoT",
+        "sistemas completos",
+        "cómo interactúan sus componentes",
+        "eficientes",
+        "escalables",
+        "mantenibles"
+      ]
+    },
+    "values": {
+      "text": "Me considero una persona curiosa y perseverante. Disfruto aprender constantemente, enfrentar nuevos desafíos y mejorar mis habilidades tanto técnicas como personales. Creo que el crecimiento profesional surge de la combinación entre disciplina, aprendizaje continuo y la disposición de seguir construyendo incluso cuando las soluciones no son evidentes.",
+      "highlight": [
+        "curiosa y perseverante",
+        "aprender constantemente",
+        "nuevos desafíos",
+        "habilidades técnicas",
+        "crecimiento profesional",
+        "disciplina",
+        "aprendizaje continuo"
+      ]
+    }
+  }
 }
-}
-}
-

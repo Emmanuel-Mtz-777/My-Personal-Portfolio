@@ -6,9 +6,9 @@ import spotifyImg from "../../assets/projects/Spotify-Insights.avif";
 import snackifyImg from "../../assets/projects/Snackify.avif";
 import citaImg from "../../assets/projects/C-Ita.avif";
 import meet2goImg from "../../assets/projects/Meet2Go.avif";
+import {spotifyInsights, snackify, cita, meet2go} from "../../utils/data/ProjectTech.js";
 
-
-const { lang = "es" } = Astro.props;
+const lang = Astro.currentLocale || "es";
 
 const t = lang === "es" ? es : en;
 
@@ -19,6 +19,15 @@ const images = [
   meet2goImg
 ];
 
+const tech= [
+  spotifyInsights,
+  snackify,
+  cita,
+  meet2go
+];
+
+
+
 const projects = (t.projects.items || []).map((proj, index) => ({
   id: proj.id,
   title: proj.name,
@@ -27,7 +36,7 @@ const projects = (t.projects.items || []).map((proj, index) => ({
   repository: proj.repository,
   image: images[index] || null,
   imageAlt: proj.imageAlt || proj.name,
-  tags: proj.technologies || [],
+  tags: tech[index] || []
 }));
 ---
 
