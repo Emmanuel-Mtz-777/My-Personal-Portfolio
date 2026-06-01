@@ -15,9 +15,12 @@ const experiences = t.experience.items || [];
   id="experience"
   class="relative w-full flex flex-col items-center pt-20 px-4"
 >
+  <div class="w-full max-w-4xl">
+
   <h2 class="text-2xl sm:text-4xl font-bold text-white mb-12">
     {t.experience.title}
   </h2>
+  </div>
   <div class="w-full flex flex-col gap-6 items-center rounded-lg p-6">
     {experiences.map((exp) => (
       <ExperienceCard exp={exp} />
