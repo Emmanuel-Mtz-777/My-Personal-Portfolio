@@ -30,7 +30,7 @@ const navItems = [
   <div
     class="max-w-7xl mx-auto px-4 py-4 flex justify-between h-20 items-center"
   >
-    <a href="#home">
+    <a href="#home" class="hover">
       <Image
         src={Logo}
         alt="Logo"
@@ -48,7 +48,7 @@ const navItems = [
         navItems.map((item) => (
           <a
             href={`#${item.id}`}
-            class="hover:text-white transition"
+            class="hover:text-cyan-400 hover:scale-110 transition-all duration-300"
             data-scroll={item.id}
           >
             {item.label}
@@ -62,7 +62,7 @@ const navItems = [
       class="flex items-center bg-white/10 rounded-full p-1 backdrop-blur-sm"
     >
       <a
-        href="/es/"
+        href="/"
         class={`px-4 py-1.5 rounded-full text-sm font-semibold transition-all duration-300 ${
           lang === "es"
             ? "bg-white text-black shadow-md"
@@ -94,20 +94,22 @@ const navItems = [
 <!-- Mobile Menu -->
 <div
   id="mobile-menu"
-  class="fixed inset-0 z-[999] bg-black/80 backdrop-blur-md translate-x-full transition-transform duration-300"
+  class="fixed inset-0 z-100 bg-black/80 backdrop-blur-md translate-x-full transition-transform duration-300"
 >
   <div class="flex justify-between p-4">
-    <Image
-      src={Logo}
-      alt="Logo"
-      width="80"
-      height="80"
-      loading="eager"
-      fetchpriority="high"
-      class="object-contain h-20"
-    />
+    <a href="#home" class="mobile-link">
+      <Image
+        src={Logo}
+        alt="Logo"
+        width="80"
+        height="80"
+        loading="eager"
+        fetchpriority="high"
+        class="object-contain h-20"
+      />
+    </a>
 
-    <button id="close-menu" class="text-white text-3xl">
+    <button id="close-menu" class="text-white text-3xl" aria-label="Close Menu">
       <HiX />
     </button>
   </div>

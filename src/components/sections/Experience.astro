@@ -1,10 +1,9 @@
 ---
 import es from "../../langs/es.json";
 import en from "../../langs/en.json";
-
 import ExperienceCard from "../ui/cards/ExperienceCard.astro";
 
-const { lang = "es" } = Astro.props;
+const lang = Astro.currentLocale || "es";
 
 const t = lang === "es" ? es : en;
 

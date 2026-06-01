@@ -1,0 +1,11 @@
+---
+const { icon: Icon, label, color } = Astro.props;
+---
+
+<div
+  class="flex items-center justify-center gap-2 rounded-xl w-auto px-2.5 py-0.5"
+  style={`background-color: ${color};`}
+>
+  <Icon style={{ width: "20px", height: "20px" }}/>
+  <span class=" text-white">{label}</span>
+</div>

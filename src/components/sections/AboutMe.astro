@@ -3,18 +3,18 @@ import es from "../../langs/es.json";
 import en from "../../langs/en.json";
 import Particles from '../effects/Particles.jsx';
 
-const { lang = "es" } = Astro.props;
+const lang = Astro.currentLocale || "es";
 
 const t = lang === "es" ? es : en;
 
-const identityText = t.about.identity.text;
-const identityHighlights = t.about.identity.highlight || [];
+const identityText: string = t.about.identity.text;
+const identityHighlights: string[] = t.about.identity.highlight || [];
 
-const focusText = t.about.focus.text;
-const focusHighlights = t.about.focus.highlight || [];
+const focusText: string = t.about.focus.text;
+const focusHighlights: string[] = t.about.focus.highlight || [];
 
-const valuesText = t.about.values.text;
-const valuesHighlights = t.about.values.highlight || [];
+const valuesText: string = t.about.values.text;
+const valuesHighlights: string[] = t.about.values.highlight || [];
 
 const getCVFile = () => {
   return lang === "es"
@@ -22,13 +22,13 @@ const getCVFile = () => {
     : "/docs/Emmanuel_Martinez_Fullstack_Developer_en_cv.pdf";
 };
 
-const highlightText = (text, highlights = []) => {
+const highlightText = (text: string, highlights: string[] = []) => {
   let result = text;
 
   highlights.forEach((highlight) => {
     result = result.replace(
       new RegExp(`(${highlight})`, "gi"),
-      `<span class="text-cyan-400 font-semibold">$1</span>`,
+      `<span class="text-cyan-400 font-bold ">$1</span>`,
     );
   });
 
@@ -43,7 +43,7 @@ const highlightText = (text, highlights = []) => {
     </h2>
   </div>
   <div class="flex flex-col sm:flex-row w-full max-w-4xl gap-4 items-center relative">
-    <div class="text-base sm:pl-6 px-4 text-white flex flex-col gap-4 z-20">
+    <div class="sm:pl-6 px-4 text-white flex flex-col gap-4 z-20">
       <p set:html={highlightText(identityText, identityHighlights)} />
 
       <p set:html={highlightText(focusText, focusHighlights)} />

@@ -2,6 +2,7 @@
 import '../../../styles/scroll.css';
 import '../../../styles/cards.css';
 import { Image } from "astro:assets";
+import TechLabel from '../labels/TechLabel.astro';
 
 const { project } = Astro.props;
 
@@ -10,7 +11,8 @@ const {
   description,
   github,
   image,
-  repository
+  repository,
+  tags
 } = project;
 ---
 
@@ -46,6 +48,17 @@ const {
         {description}
       </p>
 
+      <div class="w-full flex flex-wrap gap-3 mb-6">
+        {tags.map((tag) => (
+          <TechLabel
+            icon={tag.icon}
+            label={tag.label}
+            color={tag.color}
+          />
+        ))}
+      </div>
+
+
       <a
         href={github}
         target="_blank"
@@ -56,8 +69,7 @@ const {
           border px-4 py-2 md:px-5 md:py-2.5
           rounded-xl
           text-gray-300 bg-gray-800 border-gray-500
-          transition duration-300
-          hover:bg-white hover:text-black hover:scale-110
+          hover:bg-white/20 hover:scale-110 transition-all duration-400
         "
       >
         {repository}
