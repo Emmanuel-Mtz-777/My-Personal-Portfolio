@@ -50,13 +50,14 @@ const getCVFile = () => {
         <SocialButton href="https://github.com/Emmanuel-Mtz-777" label="GitHub">
           <GitHub className="w-5 h-5" />
         </SocialButton>
-
+        <!-- 
         <SocialButton
           href="https://www.linkedin.com/in/humberto-emmanuel-rosales-martinez-588002316/"
           label="LinkedIn"
         >
           <Linkedin className="w-5 h-5" />
         </SocialButton>
+        -->
 
         <SocialButton href="mailto:hemmanuelmtz777@gmail.com" label="Gmail">
           <Mail className="w-5 h-5" />
@@ -71,7 +72,7 @@ const getCVFile = () => {
           download
           class="bg-white text-black px-6 py-3 rounded-xl transition-all duration-400 hover:bg-gray-800 hover:text-white hover:border hover:border-white hover:scale-110"
         >
-          Descargar CV
+          {t.hero.download}
         </a>
 
         <a
@@ -80,7 +81,7 @@ const getCVFile = () => {
           rel="noopener noreferrer"
           class="border border-white px-6 py-3 rounded-xl hover:bg-white/20 hover:scale-110 transition-all duration-400"
         >
-          Ver CV
+          {t.hero.view}
         </a>
       </div>
     </div>
