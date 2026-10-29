@@ -1,197 +1,199 @@
 {
-"hero": {
-"role": "Full Stack Web Developer",
-"greeting": "Hi! I'm Emmanuel Martínez",
-"imageAlt": "AI-generated image inspired by my previous appearance with blond hair",
-"description": "Passionate about web development, backend architecture, and containerized environments. I enjoy building complete applications from the user interface to the server, developing APIs, integrating services, and creating solutions focused on performance, organization, and scalability using a wide range of technologies.",
-"location": "Aguascalientes, Mexico 🇲🇽"
-},
-"nav": {
-"projects": "Projects",
-"skills": "Skills",
-"education": "Education",
-"about": "About Me",
-"contact": "Contact",
-"experience": "Experience"
-},
-"experience": {
-"title": "Work Experience",
-"items": [
-{
-"position": "Mobile Frontend Developer",
-"company": "Swopyn Business Software Solutions",
-"duration": "January 2025 - February 2026",
-"description": [
-"Developed and maintained cross-platform mobile applications using React Native for administrative systems.",
-"Implemented intuitive, accessible, and user-centered interfaces.",
-"Integrated native mobile features such as camera access within applications.",
-"Consumed and integrated REST APIs, handling state management, error control, and data synchronization.",
-"Built reusable logic through custom hooks and modular components.",
-"Maintained existing codebases and implemented new features.",
-"Collaborated with development teams following agile methodologies and Git-based workflows."
-]
-},
-{
-"position": "IoT Prototype Developer",
-"company": "Acustia, Technological Institute of Aguascalientes",
-"duration": "December 2023 - December 2024",
-"description": [
-"Developed an IoT smart home prototype focused on accessibility for people with hearing impairments.",
-"Configured and managed Linux services on Raspberry Pi devices for automation and testing environments.",
-"Automated processes and device communication using JavaScript.",
-"Integrated hardware and software components for real-time monitoring and control.",
-"Applied fuzzy logic techniques for adaptive automation and decision-making."
-]
-}
-]
-},
-"projects": {
-"title": "Projects",
-"items": [
-{
-"id": "spotify-insights",
-"imageAlt": "Screenshot of Spotify Insights with Elasticsearch",
-"name": "Spotify Insights with Elasticsearch",
-"description": "Big Data analysis using Elasticsearch on a Spotify songs dataset. It enables querying song characteristics such as duration, energy, and valence, while visualizing results through Jupyter Notebooks. The entire environment (Elasticsearch and Kibana) runs inside Docker containers.",
-"technologies": [
-"Python",
-"Jupyter Notebook",
-"Elasticsearch",
-"Docker"
-],
-"repository": "View Repository",
-"githubLink": "https://github.com/Emmanuel-Mtz-777/Spotify-Insights-with-Elasticsearch"
-},
-{
-"id": "snakify",
-"imageAlt": "Screenshot of Snakify",
-"name": "Snakify",
-"description": "Frontend project developed for an e-commerce platform focused on selling desserts through local stores. It allows user interaction with the interface while remaining open for future backend integration.",
-"technologies": [
-"HTML",
-"CSS",
-"JavaScript",
-"TypeScript",
-"Tailwind CSS",
-"Astro"
-],
-"repository": "View Repository",
-"githubLink": "https://github.com/Emmanuel-Mtz-777/Snackify"
-},
-{
-"id": "c-ita",
-"imageAlt": "Screenshot of C-Ita",
-"name": "C-Ita",
-"description": "Frontend application developed in Kotlin, focused on creating a Facebook-style social network for ITA students. It supports user interaction through posts, using both a local SQLite database and an external API built with Node.js connected to MySQL.",
-"technologies": [
-"Kotlin"
-],
-"repository": "View Repository",
-"githubLink": "https://github.com/Emmanuel-Mtz-777/Cita"
-},
-{
-"id": "meet2go",
-"imageAlt": "Screenshot of Meet2go",
-"name": "Meet2go",
-"description": "Cross-platform mobile application built with React Native and Supabase to connect people with similar interests and organize group events. Features user profiles, event management, and a real-time chat system powered by an Express microservice deployed on Heroku.",
-"technologies": [
-"React",
-"React Native",
-"Supabase",
-"Express"
-],
-"repository": "View Repository",
-"githubLink": "https://github.com/Emmanuel-Mtz-777/meet2Go"
-}
-]
-},
-"stack": {
-"title": "Technical Skills",
-"lang": "Programming Languages",
-"db": "Databases",
-"backend": "Backend",
-"frontend": "Frontend",
-"tools": "Tools"
-},
-"education": {
-"title": "Education & Certifications",
-"date": "2021 - 2026",
-"name": "Bachelor's Degree in Information and Communications Technology Engineering",
-"organization": "Technological Institute of Aguascalientes"
-},
-"certifications": {
-"title": "Education & Certifications",
-"items": [
-{
-"date": "May 26, 2025",
-"name": "Network Security",
-"issuer": "Cisco"
-},
-{
-"date": "Dec 13, 2024",
-"name": "CCNA: Enterprise Networking, Security, and Automation",
-"issuer": "Cisco"
-},
-{
-"date": "Dec 02, 2024",
-"name": "Linux Unhatched",
-"issuer": "Cisco"
-},
-{
-"date": "Dec 07, 2023",
-"name": "CCNA: Switching, Routing, and Wireless Essentials",
-"issuer": "Cisco"
-},
-{
-"date": "Oct 29, 2023",
-"name": "Introduction to Data Science",
-"issuer": "Cisco"
-},
-{
-"date": "May 30, 2023",
-"name": "CCNA: Introduction to Networks",
-"issuer": "Cisco"
-}
-]
-},
-"about": {
-"title": "About Me",
-"identity": {
-"text": "I'm Humberto Emmanuel Rosales Martínez, a Full Stack Developer and ICT Engineer. My interest in technology began with a curiosity about how things work and eventually became a passion for building software that solves real-world problems.",
-"highlight": [
-"Humberto Emmanuel Rosales Martínez",
-"Full Stack Developer",
-"ICT Engineer",
-"how things work",
-"building software",
-"solves real-world problems"
-]
-},
-"focus": {
-"text": "Throughout my journey, I have worked on web and mobile applications, REST APIs, process automation, and IoT projects. Beyond any specific technology, I enjoy exploring complete systems, understanding how their components interact, and finding ways to make them more efficient, scalable, and maintainable.",
-"highlight": [
-"web and mobile applications",
-"REST APIs",
-"process automation",
-"IoT projects",
-"complete systems",
-"how their components interact",
-"efficient",
-"scalable",
-"maintainable"
-]
-},
-"values": {
-"text": "I consider myself a curious and persistent person. I enjoy continuous learning, taking on new challenges, and improving both my technical and personal skills. I believe professional growth comes from discipline, continuous learning, and the willingness to keep building even when solutions are not immediately obvious.",
-"highlight": [
-"curious and persistent",
-"continuous learning",
-"new challenges",
-"technical and personal skills",
-"professional growth",
-"discipline",
-"continuous learning"
-]
-}
-}
+    "hero": {
+        "role": "Full Stack Web Developer",
+        "greeting": "Hi! I'm Emmanuel Martínez",
+        "imageAlt": "AI-generated image inspired by my previous appearance with blond hair",
+        "description": "Passionate about web development, backend architecture, and containerized environments. I enjoy building complete applications from the user interface to the server, developing APIs, integrating services, and creating solutions focused on performance, organization, and scalability using a wide range of technologies.",
+        "location": "Aguascalientes, Mexico 🇲🇽",
+        "download":"Download CV",
+        "view":"View CV"
+    },
+    "nav": {
+        "projects": "Projects",
+        "skills": "Skills",
+        "education": "Education",
+        "about": "About Me",
+        "contact": "Contact",
+        "experience": "Experience"
+    },
+    "experience": {
+        "title": "Work Experience",
+        "items": [
+            {
+                "position": "Freelance Developer",
+                "company": "Swopyn Business Software Solutions",
+                "duration": "January 2025 - February 2026",
+                "description": [
+                    "Development and maintenance of cross-platform mobile applications with React Native for administrative systems, including authentication, navigation, and REST API consumption with state management and error handling for data synchronization.",
+                    "Implementation of intuitive, accessible, and user experience-centered interfaces, as well as native functionalities such as camera access within mobile applications.",
+                    "Consumption and integration of REST APIs, state management, and error handling for data synchronization and communication with backend services.",
+                    "Development of reusable logic through custom hooks and modular components to improve maintainability and accelerate the implementation of new features.",
+                    "Participation in the maintenance of existing code and the implementation of new features within administrative systems.",
+                    "Collaboration with development teams following agile methodologies and Git workflows for continuous delivery of features."
+                ]
+            },
+            {
+                "position": "IoT Prototype Developer",
+                "company": "",
+                "duration": "November 2023 - December 2024",
+                "description": [
+                    "Development of an end-to-end IoT solution focused on accessibility for people with hearing disabilities, integrating hardware and software for device automation and control.",
+                    "Design of a modular architecture that facilitated system maintenance and the scalability of new features.",
+                    "Configuration and administration of Linux services on Raspberry Pi for communication, data processing, and testing environments.",
+                    "Implementation of device-to-device communication using JavaScript and protocols such as MQTT and Wi-Fi, integrating sensors and actuators for real-time monitoring and control.",
+                    "Development of the automation interface with JavaScript, including web and mobile views, and addition of a database for action management and device control.",
+                    "Application of fuzzy logic for adaptive automation and system decision-making."
+                ]
+            }
+        ]
+    },
+    "projects": {
+        "title": "Projects",
+        "items": [
+            {
+                "id": "spotify-insights",
+                "imageAlt": "Screenshot of Spotify Insights with Elasticsearch",
+                "name": "Spotify Insights with Elasticsearch",
+                "description": "Big Data analysis using Elasticsearch on a Spotify songs dataset. It enables querying song characteristics such as duration, energy, and valence, while visualizing results through Jupyter Notebooks. The entire environment (Elasticsearch and Kibana) runs inside Docker containers.",
+                "technologies": [
+                    "Python",
+                    "Jupyter Notebook",
+                    "Elasticsearch",
+                    "Docker"
+                ],
+                "repository": "View Repository",
+                "githubLink": "https://github.com/Emmanuel-Mtz-777/Spotify-Insights-with-Elasticsearch"
+            },
+            {
+                "id": "snakify",
+                "imageAlt": "Screenshot of Snakify",
+                "name": "Snakify",
+                "description": "Frontend project developed for an e-commerce platform focused on selling desserts through local stores. It allows user interaction with the interface while remaining open for future backend integration.",
+                "technologies": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "TypeScript",
+                    "Tailwind CSS",
+                    "Astro"
+                ],
+                "repository": "View Repository",
+                "githubLink": "https://github.com/Emmanuel-Mtz-777/Snackify"
+            },
+            {
+                "id": "c-ita",
+                "imageAlt": "Screenshot of C-Ita",
+                "name": "C-Ita",
+                "description": "Mobile application developed in Kotlin, focused on creating a Facebook-style social network for ITA students. It supports user interaction through posts, using both a local SQLite database and an external API built with Node.js connected to MySQL.",
+                "technologies": [
+                    "Kotlin"
+                ],
+                "repository": "View Repository",
+                "githubLink": "https://github.com/Emmanuel-Mtz-777/Cita"
+            },
+            {
+                "id": "meet2go",
+                "imageAlt": "Screenshot of Meet2go",
+                "name": "Meet2go",
+                "description": "Cross-platform mobile application built with React Native and Supabase to connect people with similar interests and organize group events. Features user profiles, event management, and a real-time chat system powered by an Express microservice deployed on Heroku.",
+                "technologies": [
+                    "React",
+                    "React Native",
+                    "Supabase",
+                    "Express"
+                ],
+                "repository": "View Repository",
+                "githubLink": "https://github.com/Emmanuel-Mtz-777/meet2Go"
+            }
+        ]
+    },
+    "stack": {
+        "title": "Technical Skills",
+        "lang": "Programming Languages",
+        "db": "Databases",
+        "backend": "Backend",
+        "frontend": "Frontend",
+        "tools": "Tools"
+    },
+    "education": {
+        "title": "Education & Certifications",
+        "date": "2021 - 2026",
+        "name": "Bachelor's Degree in Information and Communications Technology Engineering",
+        "organization": "Technological Institute of Aguascalientes"
+    },
+    "certifications": {
+        "title": "Education & Certifications",
+        "items": [
+            {
+                "date": "May 26, 2025",
+                "name": "Network Security",
+                "issuer": "Cisco"
+            },
+            {
+                "date": "Dec 13, 2024",
+                "name": "CCNA: Enterprise Networking, Security, and Automation",
+                "issuer": "Cisco"
+            },
+            {
+                "date": "Dec 02, 2024",
+                "name": "Linux Unhatched",
+                "issuer": "Cisco"
+            },
+            {
+                "date": "Dec 07, 2023",
+                "name": "CCNA: Switching, Routing, and Wireless Essentials",
+                "issuer": "Cisco"
+            },
+            {
+                "date": "Oct 29, 2023",
+                "name": "Introduction to Data Science",
+                "issuer": "Cisco"
+            },
+            {
+                "date": "May 30, 2023",
+                "name": "CCNA: Introduction to Networks",
+                "issuer": "Cisco"
+            }
+        ]
+    },
+    "about": {
+        "title": "About Me",
+        "identity": {
+            "text": "I'm Humberto Emmanuel Rosales Martínez, a Full Stack Developer and ICT Engineer. My interest in technology began with a curiosity about how things work and eventually became a passion for building software that solves real-world problems.",
+            "highlight": [
+                "Humberto Emmanuel Rosales Martínez",
+                "Full Stack Developer",
+                "ICT Engineer",
+                "how things work",
+                "building software",
+                "solves real-world problems"
+            ]
+        },
+        "focus": {
+            "text": "Throughout my journey, I have worked on web and mobile applications, REST APIs, process automation, and IoT projects. Beyond any specific technology, I enjoy exploring complete systems, understanding how their components interact, and finding ways to make them more efficient, scalable, and maintainable.",
+            "highlight": [
+                "web and mobile applications",
+                "REST APIs",
+                "process automation",
+                "IoT projects",
+                "complete systems",
+                "how their components interact",
+                "efficient",
+                "scalable",
+                "maintainable"
+            ]
+        },
+        "values": {
+            "text": "I consider myself a curious and persistent person. I enjoy continuous learning, taking on new challenges, and improving both my technical and personal skills. I believe professional growth comes from discipline, continuous learning, and the willingness to keep building even when solutions are not immediately obvious.",
+            "highlight": [
+                "curious and persistent",
+                "continuous learning",
+                "new challenges",
+                "technical and personal skills",
+                "professional growth",
+                "discipline",
+                "continuous learning"
+            ]
+        }
+    }
 }

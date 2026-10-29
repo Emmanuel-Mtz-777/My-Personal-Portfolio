@@ -4,7 +4,9 @@
     "greeting": "¡Hola! Soy Emmanuel Martínez",
     "imageAlt": "Imagen IA de mi estilo anterior con cabello rubio",
     "description": "Apasionado por el desarrollo web, la arquitectura backend y los contenedores. Me gusta crear aplicaciones completas desde la interfaz hasta el servidor, desarrollando APIs, integrando servicios y construyendo soluciones enfocadas en rendimiento, organización y escalabilidad utilizando diversas tecnologías.",
-    "location": "Aguascalientes, Ags., México 🇲🇽"
+    "location": "Aguascalientes, Ags., México 🇲🇽",
+    "download":"Descargar CV",
+    "view":"Ver CV"
   },
   "nav": {
     "projects": "Proyectos",
@@ -18,29 +20,29 @@
     "title": "Experiencia laboral",
     "items": [
       {
-        "position": "Mobile Frontend Developer",
+        "position": "Desarrollador Freelance",
         "company": "Swopyn Business Software Solutions",
         "duration": "Enero 2025 - Febrero 2026",
         "description": [
-          "Desarrollo y mantenimiento de aplicaciones móviles multiplataforma utilizando React Native para sistemas administrativos.",
-          "Implementación de interfaces intuitivas, accesibles y centradas en la experiencia del usuario.",
-          "Integración y manejo de funcionalidades nativas como el acceso a cámara dentro de aplicaciones móviles.",
-          "Consumo e integración de APIs REST, manejo de estados y control de errores para sincronización de datos.",
-          "Desarrollo de lógica reutilizable mediante custom hooks y componentes modulares.",
-          "Participación en mantenimiento de código existente e implementación de nuevas funcionalidades.",
-          "Colaboración con equipos de desarrollo siguiendo metodologías ágiles y flujos de trabajo con Git."
+          "Desarrollo y mantenimiento de aplicaciones móviles multiplataforma con React Native para sistemas administrativos, incluyendo autenticación, navegación y consumo de APIs REST con gestión de estados y control de errores para la sincronización de datos.",
+          "Implementación de interfaces intuitivas, accesibles y centradas en la experiencia del usuario, así como de funcionalidades nativas como el acceso a la cámara dentro de las aplicaciones móviles.",
+          "Consumo e integración de APIs REST, manejo de estados y control de errores para la sincronización de datos y la comunicación con servicios backend.",
+          "Desarrollo de lógica reutilizable mediante custom hooks y componentes modulares para mejorar la mantenibilidad y acelerar la implementación de nuevas funcionalidades.",
+          "Participación en el mantenimiento de código existente y en la implementación de nuevas funcionalidades dentro de los sistemas administrativos.",
+          "Colaboración con equipos de desarrollo siguiendo metodologías ágiles y flujos de trabajo con Git para la entrega continua de funcionalidades."
         ]
       },
       {
-        "position": "Desarrollador de Prototipo IoT",
-        "company": "Acustia, Instituto Tecnológico de Aguascalientes",
-        "duration": "Diciembre 2023 - Diciembre 2024",
+        "position": "Desarrollador IoT",
+        "company": "",
+        "duration": "Noviembre 2023 - Diciembre 2024",
         "description": [
-          "Desarrollo de un prototipo IoT de casa inteligente enfocado en accesibilidad para personas con discapacidad auditiva.",
-          "Configuración y administración de servicios Linux sobre Raspberry Pi para automatización y entornos de prueba.",
-          "Automatización de procesos y comunicación entre dispositivos utilizando JavaScript.",
-          "Integración de componentes de hardware y software para monitoreo y control en tiempo real.",
-          "Aplicación de lógica difusa para automatización adaptativa y toma de decisiones."
+          "Desarrollo de una solución IoT de extremo a extremo enfocada en accesibilidad para personas con discapacidad auditiva, integrando hardware y software para la automatización y el control de dispositivos.",
+          "Diseño de una arquitectura modular que facilitó el mantenimiento del sistema y la escalabilidad de nuevas funcionalidades.",
+          "Configuración y administración de servicios Linux sobre Raspberry Pi para la comunicación, el procesamiento de datos y los entornos de prueba.",
+          "Implementación de la comunicación entre dispositivos mediante JavaScript y protocolos como MQTT y Wi-Fi, integrando sensores y actuadores para el monitoreo y control en tiempo real.",
+          "Desarrollo de la interfaz de automatización con JavaScript, incluyendo vista web y móvil, y añadí una base de datos para la gestión de acciones y el control de los dispositivos.",
+          "Aplicación de lógica difusa para la automatización adaptativa y la toma de decisiones del sistema."
         ]
       }
     ]
@@ -68,7 +70,7 @@
         "id": "c-ita",
         "imageAlt": "Captura de pantalla de C-Ita",
         "name": "C-Ita",
-        "description": "Proyecto frontend desarrollado en Kotlin, enfocado en crear una red social al estilo Facebook para estudiantes del ITA. Permite la interacción entre usuarios mediante publicaciones, utilizando tanto una base de datos local SQLite como una API externa desarrollada en Node.js con conexión a una base de datos MySQL.",
+        "description": "Aplicacion movil desarrollada en Kotlin, desarrollada con el proposito de crear una red social al estilo Facebook para estudiantes del ITA. Permite la interacción entre usuarios mediante publicaciones, utilizando tanto una base de datos local SQLite como una API externa desarrollada en Node.js con conexión a una base de datos MySQL.",
         "repository": "Ver repositorio",
         "githubLink": "https://github.com/Emmanuel-Mtz-777/Cita"
       },
